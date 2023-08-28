@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="setupfaceid"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title-holder ion-text-center">
+    <h2>Setup Fingerprint</h2>
+    <p class="p3 ion-text-wrap">
+      You can use fingerprint authentication
+      to login into Tradebase
+    </p>
+  </div>
+
+  <div class="img-holder ion-text-center">
+    <img src="assets/imgs/fingerprint.svg" alt="">
+    <p class="p3">
+      Please lift and rest your finger
+    </p>
+  </div>
+
+
+  <div class="bottom-holder ion-text-center ion-padding">
+    <div class="btns-holder ">
+      <ion-button class="big-btn" (click)="setUpPin()" expand="block">
+        Continue
+        <div class="liquid">
+        
+        </div> 
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

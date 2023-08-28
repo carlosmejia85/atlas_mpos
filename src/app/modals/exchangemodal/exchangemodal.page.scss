@@ -1,0 +1,144 @@
+ion-content
+{
+
+    .seg-holder
+    {
+        margin-bottom: 20px;
+        ion-segment
+        {
+            ion-segment-button
+            {
+                height: 2.5rem;
+            }
+        }
+    }
+    .wrapper
+    {
+        height: 250px;
+        position: relative;
+
+
+        .holders
+        {
+            border-radius: 24px;
+            background: #F4F4F6;
+            height: 125px;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        ion-item
+        {
+            --background: transparent;
+            --padding-start:0;
+            .thumb
+            {
+                margin: 0 5px 0 0;
+                img
+                {
+                    height: 40px;
+                }
+            }
+
+            .sign
+            {
+                margin: 0 5px 0 0 !important;
+            }
+
+           h3
+            {
+                font-size: 24px;
+            }
+
+            ion-input
+            {
+                font-size: 24px;
+            }
+        }
+
+        .selected
+        {
+            margin-right: 10px;
+        }
+        .first-holder
+        {
+          
+        }
+
+        .second-holder
+        {
+           
+        }
+
+        .top-holder
+        {
+            margin-bottom: 10px;
+            h4
+            {
+                font-size: 16px;
+                margin: 0 10px 0 0;
+            }
+
+            span
+            {
+                color: #12182696;
+                font-size: 12px;
+            }
+        }
+
+        .btn
+        {
+            background: var(--ion-color-primary);
+            border-color: white;
+            border-width: 5px;
+            border-style: solid;
+            bottom: 0;
+            border-radius: 50%;
+            height: 4rem;
+            margin:  auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 4rem;
+
+            ion-icon
+            {
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .rotateanimation
+    {
+        animation: rotatee 0.5s ease-in 3  ;
+    }
+
+    @keyframes rotatee
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+
+        25%
+        {
+            transform: rotate(90deg);
+        }
+
+        50%
+        {
+            transform: rotate(180deg);
+        }
+
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+
+    .btn-holder
+    {
+        margin-top: 40vh;
+    }
+}

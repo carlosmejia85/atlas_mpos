@@ -1,0 +1,265 @@
+{
+    "SignIn": 
+    {
+        "Title1"            : "Let's Sign You In"                   , 
+        "Title2"            : "Welcome back, you've been missed!"   , 
+        "SigninMessage"     : "Please enter your credential"        , 
+        "EmailAddress"      : "Email address"                       ,      
+        "Password"          : "Password"                            ,
+        "ForgotPassword"    : "Forgot Password?"                    , 
+        "NoAccount"         : "Don't have an account ? "            , 
+        "SignUp"            : "Sign up"                              ,
+        "FingerPrint"       : "Please lift and rest your finger or show your face",
+        "RememberMe"        : "Remember me"                         , 
+        "Buttons"           :
+        {   
+            "SignIn" : "Sign In"
+        }
+        , 
+        "Messages"          : 
+        {
+            "Information"           : "Information"                                             ,
+            "BadCredentials"        : "Incorrect user or password"                              ,
+            "EmailPasswordRequired" : "Email is required"                             , 
+            "Authenticating"        : "<p>Authenticating...<br/>Please wait</p><span>.</span>"  ,                   
+            "BiometricFailed"       : "Biometric verification failed"                           , 
+            "LoginTimeout"          : "Login Timeout"                                           , 
+            "ErrorCreatingAccount"  : "Error creating account"                                  , 
+            "NoDevicePaired"        : "No Device has been paired"
+        } 
+    }, 
+    "Home" : 
+    {
+        "LastTrx"           : "Last Transactions"     , 
+        "ViewAll"           : "View all"              ,
+        "NoTransactions"    : "No Transactions"       , 
+        "UsefulInformation" : "Useful Information"    ,
+        "YourTotal"         : "Your Total", 
+        "SaleTitle"         : "SALE",
+        "VoidTitle"         : "VOID",
+        "RevTitle"          : "REV"
+    }, 
+    "Portafolio" : 
+    {
+        "Title"          : "Batch Information"  , 
+        "Void"           : "Void"               , 
+        "Sale"           : "Sales"              , 
+        "BatchTotal"     : "Batch Totals"       ,
+        "OneWeek"        : "1W"                 ,
+        "OneMonth"       : "1M"                 ,     
+        "OneYear"        : "1Y"     
+     
+    } , 
+    "Tabs" : 
+    {
+        "Home"           : "Home"               , 
+        "Batch"          : "Batch"              , 
+        "Transactions"   : "Transactions"       ,     
+        "Profile"        : "Profile"            , 
+        "Sale"           : "Sale"               ,
+        "Points"         : "Point Sale"         , 
+        "PointsBalance"  : "Point Balance"      , 
+        "Refund"         : "Refund"             ,
+        "Installments"   : "Installments"       ,
+        "Settlement"     : "Settlement" 
+    } , 
+    "Transactions" : 
+    {
+        "Title"           : "Transactions"      , 
+        "History"         : "History"           , 
+        "RecentOrder"     : "Recent Order"        
+       
+    }, 
+    "Profile" : 
+    {
+        "Title"                     : "Profile"                         , 
+        "TerminalConfiguration"     : "Terminal Configuration"          , 
+        "EmvConfiguration"          : "Download Emv Configuration"      , 
+        "Language"                  : "Language"                        ,
+        "Settings"                  : "Settings"                        ,
+        "FAQ"                       : "FAQ"                             ,
+        "Logout"                    :  "Log out"                        ,
+        "Title2" : " We would like to know your feedback."
+    }, 
+    "TransactionView" : 
+    {
+        "Title"                 : "Transaction View"                        , 
+        "Information"           : "Information"                             , 
+        "Amount"                : "Amount"                                  , 
+        "Status"                : "Status"                                  , 
+        "Card"                  : "Card"                                    , 
+        "EntryMode"             : "Entry Mode"                              , 
+        "Date"                  : "Date"                                    , 
+        "Note"                  : "Note"                                    ,       
+        "TransactionID"         : "Transaction-ID"                          ,
+        "Actions"               : "Actions"                                 ,
+        "Signature"             : "Signature"                               , 
+        "ViewDigitalSignature"  : "View Digital Signature"                  , 
+        "View"                  : "View"                                    , 
+        "Void"                  : "Void"                                    , 
+        "VoidTitle"             : "This action will void the transaction"   , 
+        "CustomerEmailAddress"  : "Email address to send receipt"           ,
+        "EmailAddressNotValid"  : "Email address not valid."                , 
+        "Send"                  : "Send"                                    ,
+        "VoidThisTransaction"   : "Void this transaction"                   , 
+        "SelectAction"          : "Select an action"                        , 
+        "Cancel"                : "Cancel"                                  , 
+        "ProcessingTransaction" : "<p>Processing Transaction...</p> </br> <span>Please, wait a moment</span>'"  , 
+        "VoidSuccess"           : "Transaction voided correctly"                                                ,
+        "VoidError"             : "Error while processing the transaction"                                      , 
+        "SendMailMessage"       : "<p>Sending Receipt Email...</p> </br> <span>Please, wait a moment</span>"    ,
+        "EmailError"            : "There was an error trying to send the Email"     , 
+        "ReceiptOptions"        : "Receipt delivery options"                        , 
+        "CustomerTelephone"     : "SMS Receipt option"                              ,
+        "SendSMSMessage"        : "<p>Sending SMS Email...</p> </br> <span>Please, wait a moment</span>" , 
+        "SMSError"              : "There was an error trying to send the SMS"       , 
+        "Settled"               : "Batched"                                         , 
+        "NotSettled"            : "Not Batched"                                     ,
+        "Yes"                   : "Yes"
+    }, 
+    "TerminalConfig" : 
+    {
+        "Title"                 : "Terminal Configuration"          , 
+        "TerminalId"            : "TerminalId"                      ,
+        "MerchantId"            : "Merchant Id"                     , 
+        "Tip"                   : "Tip"                             , 
+        "Tax"                   : "Tax"                             ,
+        "Cancel"                : "Cancel"                          , 
+        "TaxSettings"           : "Tax Settings"                    ,    
+        "EnabledTax"            : "Enabled Tax"                     ,
+        "TipSettings"           : "Tip Settings"                    ,
+        "Save"                  : "Save"                            ,
+        "EnabledTip"            : "Enable Tip"                     , 
+        "ErrorNumberGreater"    : "Number can't be greate than 100" , 
+        "Max8"                  : "Terminal id. Max 8 digits"       , 
+        "Max15"                 : "Merchant id. Max 15 digits"      , 
+        "OverCharged"           : "Enable Surcharge"                , 
+        "EnabledPoints"         : "Enable Points"                   ,
+        "EnabledRefund"         : "Enable Refund"                   ,
+        "EnabledInstallments"   : "Enable Installments"             ,
+        "SurchargeSettings"     : "Surcharge Settings"              ,              
+        "Surcharge"             : "Surcharge"                       , 
+        "Timeout"               : "Timeout"                         , 
+        "TimeoutMax2"           : "Timeout Max 2 digits"            ,
+        "TerminalIdRequired"    : "Please set the terminal Id on Terminal Configuration" ,
+        "MerchantIdRequired"    : "Please set the merchant Id on Terminal Configuration" 
+    }, 
+    "FAQ" : 
+    {
+        "Title1"                : "Questions about"                 , 
+        "SubTitle1"             : "Getting Started"                 ,
+        "Title2"                : "How to configure tip"            , 
+        "Title3"                : "Set up automatic tax"            , 
+        "PageTitle"             : "FAQ"                             ,
+        "SearchPlaceholder"     : "Search topics or questions..."   ,
+        "TopQuestions"          : "Top Questions"                   , 
+        "ViewAll"               : "View All"                        ,
+        "CreateAccount"         : "How to create a account?"        , 
+        "Visit1"                : "Please visit atlasbank.com website, then go Create Account section and follow the instructions.", 
+        "AddPaymentMethod"      : " How to add a payment method?"   ,
+        "Visit2"                : "Please visit atlasbank.com website, then go Create Account section and follow the instructions.", 
+        "HowToInvest"           : "How to Invest", 
+        "PaymentMethods"        : "Payment Methods"
+    }, 
+    "Settings" : 
+    {
+        "Title"                 : "Settings"                            ,
+        "General"               : "General"                             , 
+        "Contactus"             : "Contact Us"                          ,
+        "Security"              : "Security"                            ,
+        "FingerPrintFaceID"     : "Fingerprint and Face ID"             , 
+        "PrivacyPolicy"         : "Privacy Policy"                      , 
+        "ChooseData"            : "Choose what data you share with us"  , 
+        "Legal"                 : "Legal"   
+    }, 
+    "Signature" : 
+    {
+        "PageTitle" : "Signature View"                                  , 
+        "Clear"     : "Clear"                                           ,
+        "Save"      : "Save"                                            ,
+        "GoBack"    : "Go Back"
+    },
+    "SignUp" : 
+    {
+        "Title1"            : "Getting Started"                         ,
+        "Title2"            : "Create an account to continue!"          ,
+        "EmailAddress"      : "Email Address"                           , 
+        "Password"          : "Password"                                ,
+        "ConfirmPassword"   : "Confirm Password"                        , 
+        "Agreement"         : "I agree to the Terms of "                , 
+        "Continue"          : "Continue"                                ,
+        "AlreadyAccount"    : " Already have an account ? "             , 
+        "Service"           : "Service "                                , 
+        "Policy"            : "and Privacy Policy"                      , 
+        "Signin"            : "Sign in"                                 , 
+        "PasswordNoMatch"   : "Passwords do not match"                  , 
+        "MustSelectAgreement" : "You must agree the terms to continue.", 
+        "SendingRequest"   : "Sending Request ..."
+    },
+    "EmailAccount" : 
+    {
+        "Confirmation"  : "Confirm your email account"                                          ,
+        "Title1"        : "We have sent you an email, please check it and confirm your account.",
+        "Continue"      : "Continue"      
+    },
+    "Transaction": 
+    {
+        "Title"                 : "Sale Transaction"    , 
+        "BaseAmount"            : "Base Amount"         ,
+        "TipAmount"             : "Tip Amount"          , 
+        "TaxAmount"             : "Tax Amount"          ,
+        "SuggestedTip"          : "Suggested Tip"       , 
+        "OverCharged"           : "Surcharge"          , 
+        "TotalAmount"           : "Total Amount"        ,
+        "Continue"              : "Continue"           , 
+        "ErrorGreater100"       : "The quota value can't be greater than 100"       , 
+        "Quota"                 : "Quotas"                  , 
+        "Zero"                  : "Quota can't be zero"     , 
+        "ProcessingSettlement"  : "Processing Settlement "  , 
+        "BatchEmpty"            : "Batch is empty"          , 
+        "AmountZero"            : "Amount can't be zero."   , 
+        "AskSettle" : "Do you want to settle this batch?"            
+    }, 
+    "Confirmation" : 
+    {
+        "Title"             : "Process Transaction"    , 
+        "TotalCost"         : "Total Cost"          , 
+        "PaymentDevice"     : "Payment Device"      , 
+        "PaymentDetails"    : "Payment details"     , 
+        "Retry"             : "Retry"               , 
+        "Cancel"            : "Cancel"              ,
+        "TotalPoints"       : "Points "
+    }, 
+    "PasswordRecovery" : 
+    {
+        "Title"             : "Password Recovery"                           ,
+        "Title2"            : "Enter your email to recover your password"   ,
+        "EmailAddress"      : "Email Address"                               , 
+        "ErrorResetAccount" : "Error. Cannot reset the password."            , 
+        "Title3"            : "Enter your password"   , 
+        "PasswordMismatched": "Password don't match",
+        "PasswordChangedOk" : "Password changed successfully. Please Sign in again.", 
+        "PasswordRequirementFailed" : "Password doesn't meet the requirements." 
+
+    }, 
+    "Devices" : 
+    {
+        "Title"                     : "Devices"             ,
+        "RegisteredDevices"         : "Registered Devices"  ,
+        "NewDevices"                : "New Devices"         ,
+        "Selected"                  : "Selected"            ,
+        "Scan"                      : "Scan New Devices"    , 
+        "Connect"                   : "Connect"             ,
+        "UnPair"                    : "Unpair"              , 
+        "Disconnect"                : "Disconnect"            
+    }, 
+
+    "OTPVerify" : 
+    {
+        "EnterAuthenticationCode"   : "Authentication Code", 
+        "Enter4DigitCode"           : "Enter 4-digit code we just sent to your email account", 
+        "ResendCode"                : "Resend Code", 
+        "Continue"                  : "Continue"    , 
+        "ResendCodeMessage"         : "We have sent the code to your email account"
+    }
+}

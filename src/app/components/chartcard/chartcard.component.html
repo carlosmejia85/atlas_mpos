@@ -1,0 +1,42 @@
+<div class="chart-card">
+  <ion-row>
+    <ion-col size="2" class="flex al-center jc-center">
+      <div class="img-holder">
+        <img [src]="imgPath" alt="">
+      </div>
+    </ion-col>
+    <ion-col size="3" class="flex al-center jc-center">
+      <div>
+        <h4>{{transactionName}}</h4>
+        <h6 class="h7">{{comName}}</h6>
+      </div>
+    </ion-col>
+    
+    <ion-col size="3.5">
+      <div style="height: 100px;"></div>
+      <!--
+      <apx-chart 
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [grid]="chartOptions.grid"
+      [dataLabels]="chartOptions.dataLabels"
+      [xaxis]="chartOptions.xaxis"
+      [yaxis]="chartOptions.yaxis"
+      [title]="chartOptions.title"
+      [stroke]="chartOptions.stroke"
+      [fill]="chartOptions.fill"
+    ></apx-chart> -->
+    </ion-col> 
+  
+    <ion-col size="3" class="flex al-center">
+     <div>
+      <h2>${{mainAmount  | number : '1.2-2' }}</h2>
+      <ion-badge [ngClass]="{'up': isup === 'up','down': isup === 'down'}" mode="ios" class="flex al-center jc-center">
+        <ion-icon name="caret-up" *ngIf="isup == 'up'"></ion-icon>
+        <ion-icon name="caret-down" *ngIf="isup == 'down'"></ion-icon> 
+        {{precentAmount}}
+      </ion-badge>
+     </div>
+    </ion-col>
+  </ion-row>
+</div>

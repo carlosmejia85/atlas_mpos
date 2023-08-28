@@ -1,0 +1,117 @@
+ion-toolbar
+{
+    --background: transparent;
+    position: absolute;
+ 
+     width: 100%;
+}
+
+ion-spinner {
+    display: block;
+    margin: auto;
+  }
+  
+ion-content
+{
+    --background: #F3FBED;
+    --padding-top:100px;
+    .holder
+    {
+        background: white;
+        border-radius: 32px;
+        transform: scale(0.9);
+        .cost-holder
+        {
+            border-bottom: 1px dashed #124d96;
+            padding-bottom: 20px;
+            h6
+            {
+                color: #6C727F;
+                font-family: 'Bold';
+                margin-bottom: 0;
+            }
+
+            h1
+            {
+                color: #121826;
+                font-family: 'Bold';
+                margin: 5px 0;
+            }
+        }
+
+        .stock-holder
+        {
+            background: #E1FFF5;
+            border-radius: 16px;
+
+            ion-item
+            {
+                --background: transparent;
+
+                .thumb
+                {
+                    img
+                    {
+                        height: 30px;
+                    }
+                }
+
+                ion-label
+                {
+                    h4
+                    {
+                        font-family: 'Bold';
+                    }
+
+                    h6
+                    {
+                        color: #6C727F;
+                        font-family: 'Regular';
+                    }
+                }
+            }
+        }
+
+        .paymethod-holder
+        {
+            background: #F4F4F6;
+            border-radius: 16px;
+            ion-item
+            {
+                --background: transparent;
+            }
+        }
+
+        .payment-details-holder
+        {
+            ion-item
+            {
+                ion-label
+                {
+                    color: #121826;
+                    font-family: 'Regular';
+                }
+
+                #source
+                {
+                    color: #4365c4;
+                }
+            }
+        }
+        
+    }
+
+
+    .btn-holder
+    {
+        margin-top: 3vh;
+    }
+
+    .ion-item-transparent
+    {
+        --background: transparent;
+        text-align: center;
+    
+    }
+
+}

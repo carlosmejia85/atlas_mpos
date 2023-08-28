@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'Transactions.Title' | translate }}</ion-title>
+    
+    <!-- 
+      <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon slot="start" src="assets/imgs/icndots.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+   -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <div class="seg-holderr">
+    <ion-segment [value]="Categories" (ionChange)="segmentChanged($event)">
+      
+      <ion-segment-button value="history">
+        <ion-label>{{ 'Transactions.History' | translate }}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div class="seg-content">
+  
+    <div class="history" *ngIf="Categories == 'history'">
+      <div class="section">
+        <div class="section-title flex al-center jc-between" style="margin-bottom: 30px">
+          <h4>{{ 'Transactions.RecentOrder' | translate }}</h4>
+        </div>
+    
+        <div *ngIf="ShowCharts">
+          <chartcard *ngFor="let trx of transactions" (click)="goBuy(stock)"
+          #position
+          [imgPath]="trx.voided === true ? 'assets/imgs/cancel_void.png' : 'assets/imgs/money_circulation.png'" [comShortName]="trx.voided === true ? 'VOID' : trx.trxId" [comName]="trx.trx_date_string" [mainAmount]="trx.total_amount" [precentAmount]="trx.card.substring(5)"
+          routerLink="viewtransaction" 
+          [queryParams]="{ id: trx.id }" ></chartcard>       
+        </div>
+      </div>
+    </div>
+  </div> 
+</ion-content> 

@@ -1,0 +1,207 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="profile" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>    {{ 'TerminalConfig.Title' | translate }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--
+  <div class="ref-holder" (click)="goReferral()">
+    <ion-item lines="none">
+      <div slot="start" class="thumb flex al-center jc-center">
+        <img src="assets/imgs/icnref.svg" alt="">
+      </div>
+      <ion-label>
+        <h3>Referral Code</h3>
+        <h6 class="h7">
+          Share your friend get $20 of free stocks
+        </h6>
+      </ion-label>
+    </ion-item>
+  </div>
+  -->
+  <div class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="item-list">
+    <ion-item lines="none" detail (click)="setTerminalId()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p1.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.TerminalId' | translate }}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" detail (click)="setMerminalId()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p1.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.MerchantId' | translate }}</ion-label>
+    </ion-item>
+
+    <ion-item id="open-modal-tip" lines="none" detail >
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/f4.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.Tip' | translate }}</ion-label>
+    </ion-item>   
+
+    <ion-item id="open-modal-tax" lines="none" detail >
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/f4.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.Tax' | translate }}</ion-label>
+    </ion-item>    
+
+    <ion-item id="open-modal-surcharge" lines="none" detail >
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/f4.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.Surcharge' | translate }}</ion-label>
+    </ion-item>  
+      
+    <ion-item lines="none" detail (click)="setGlobalTimeout()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p1.svg" alt="">
+      </div>
+      <ion-label>{{ 'TerminalConfig.Timeout' | translate }}</ion-label>
+    </ion-item>
+
+<!--
+    <ion-item lines="none">  
+      <ion-label>{{ 'TerminalConfig.EnabledPoints' | translate }}</ion-label>
+      <ion-toggle slot="end"  [(ngModel)]="enablePoints" (ngModelChange)="updatePoints($event)"   ></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none" >
+      <ion-label>{{ 'TerminalConfig.EnabledRefund' | translate }}</ion-label>
+      <ion-toggle slot="end"  [(ngModel)]="enableRefund" (ngModelChange)="updateRefund($event)"  ></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none" > 
+      <ion-label>{{ 'TerminalConfig.EnabledInstallments' | translate }}</ion-label>
+      <ion-toggle slot="end"  [(ngModel)]="enableInstallments" (ngModelChange)="updateInstallment($event)"   ></ion-toggle>
+    </ion-item>
+  -->
+
+  </div>
+
+  <ion-modal trigger="open-modal-tax" (willDismiss)="onWillTaxDismiss($event)" #taxModal>
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">{{ 'TerminalConfig.Cancel' | translate }}</ion-button>
+          </ion-buttons>
+          <ion-title>{{ 'TerminalConfig.TaxSettings' | translate }}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm('tax')" [strong]="true">{{ 'TerminalConfig.Save' | translate }}</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+
+        <ion-item lines="none">
+          <ion-checkbox [(ngModel)]="isEnabledTax" slot="start"></ion-checkbox>
+          <ion-label>{{ 'TerminalConfig.EnabledTax' | translate }}</ion-label>
+        </ion-item> 
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Tax' | translate }} (%)</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5" class="ion-text-center" placeholder="0.00" [(ngModel)]="taxAmount" (ionInput)='onTaxAmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal trigger="open-modal-tip" (willDismiss)="onWillTipDismiss($event)" #tipModal>
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancelTip()">Cancel</ion-button>
+          </ion-buttons>
+          <ion-title>{{ 'TerminalConfig.TipSettings' | translate }}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm('tip')" [strong]="true">{{ 'TerminalConfig.Save' | translate }}</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+
+        <ion-item lines="none">
+          <ion-checkbox [(ngModel)]="isEnabledTip" slot="start"></ion-checkbox>
+          <ion-label>{{ 'TerminalConfig.EnabledTip' | translate }} </ion-label>
+        </ion-item> 
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Tip' | translate }} 1 (%)</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5" class="ion-text-center" placeholder="0.00" [(ngModel)]="tipAmount1" (ionInput)='onTip1AmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Tip' | translate }} 2 (%)</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5" class="ion-text-center" placeholder="0.00" [(ngModel)]="tipAmount2" (ionInput)='onTip2AmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Tip' | translate }} 3 (%)</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5"  class="ion-text-center" placeholder="0.00" [(ngModel)]="tipAmount3" (ionInput)='onTip3AmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+
+         <!--
+        <ion-item lines="none">
+          <ion-checkbox [(ngModel)]="isOverChargedEnabled" slot="start"></ion-checkbox>
+          <ion-label>{{ 'TerminalConfig.OverCharged' | translate }} </ion-label>
+        </ion-item> 
+
+       
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Tip' | translate }}  4</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5"  class="ion-text-center" placeholder="0.00" [(ngModel)]="tipAmount4" (ionInput)='onTip4AmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+        -->
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal trigger="open-modal-surcharge" #surchargeModal>
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancelSurcharge()">{{ 'TerminalConfig.Cancel' | translate }}</ion-button>
+          </ion-buttons>
+          <ion-title>{{ 'TerminalConfig.SurchargeSettings' | translate }}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm('surcharge')" [strong]="true">{{ 'TerminalConfig.Save' | translate }}</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+
+        <ion-item lines="none">
+          <ion-checkbox [(ngModel)]="isOverChargedEnabled" slot="start"></ion-checkbox>
+          <ion-label>{{ 'TerminalConfig.OverCharged' | translate }}</ion-label>
+        </ion-item> 
+        <ion-item>
+          <ion-label>{{ 'TerminalConfig.Surcharge' | translate }} (%)</ion-label>
+          <div class="input-holder animate__animated animate__zoomIn flex al-center">
+            <ion-input type="text" inputmode="tel" maxlength="5" class="ion-text-center" placeholder="0.00" [(ngModel)]="surchargeAmount" (ionInput)='onSurchargeAmountChange($event)'></ion-input>
+          </div>
+        </ion-item>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

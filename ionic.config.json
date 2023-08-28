@@ -1,0 +1,10 @@
+{
+  "name": "Atlas Bank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular", 
+  "hooks": {
+    "build:after": "./attach-source-maps.js"
+  }
+}

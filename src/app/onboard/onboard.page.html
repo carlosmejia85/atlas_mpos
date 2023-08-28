@@ -1,0 +1,98 @@
+<ion-content class="ion-padding">
+  <div class="slider-holder">
+    <swiper #swiper [config]="SwiperConfig" (slideChange)="onSlideChange($event)">
+      <ng-template swiperSlide>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="12">
+              <div class="img-holder">
+                <img src="assets/imgs/introimg.svg" alt="">
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+              <div class="details-holder ion-text-center">
+                <h2>Buy & Trade Top Stock</h2>
+                <p class="p3 ion-text-wrap">
+                  A place that provides you with the world's top stocks that you can buy and trade
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+
+      </ng-template>
+      <ng-template swiperSlide>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="12">
+              <div class="img-holder">
+                <img src="assets/imgs/intro2.svg" alt="">
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+              <div class="details-holder ion-text-center ion-padding-bottom">
+                <h2>Super Fast Service</h2>
+                <p class="p3 ion-text-wrap">
+                  We promise you to provide super fast transaction service
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+
+      </ng-template>
+      <ng-template swiperSlide>
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="12">
+              <div class="img-holder" style="margin-top: -40px;">
+                <img src="assets/imgs/onboard3.svg" alt=""  style="height: 40vh !important;">
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+              <div class="details-holder ion-text-center">
+                <h2>Get Successfull</h2>
+                <p class="p3 ion-text-wrap">
+                 Invest your money on highly profitable path and get success
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+
+      </ng-template>
+
+
+    </swiper>
+ 
+  </div>
+
+  <div class="btn-holder">
+    <ion-button id="next" (click)="next()" expand="block"  *ngIf="activeIndex != '2'">
+      Next
+      <div class="liquid">
+        
+      </div> 
+    </ion-button>
+
+    <ion-button id="next" (click)="goSignIn()" expand="block"  *ngIf="activeIndex == '2'">
+      Sign in
+    </ion-button>
+
+    <ion-button class="animate__animated animate__fadeInUp" id="signIn" (click)="goSignUp()" expand="block"  *ngIf="activeIndex == '2'">
+      Sign Up
+    </ion-button>
+  </div>
+</ion-content>

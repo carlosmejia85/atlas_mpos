@@ -1,0 +1,25 @@
+<ion-content>
+
+    <ion-grid style="height: 100%">
+        <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%">
+            <div class="holder ion-text-center animate__animated animate__zoomIn">
+                <div class="img-holder">
+                    <img src="assets/imgs/ok.png" alt="">
+                </div>
+
+                <h2>Transaction Complete</h2>
+                <h6 class="ion-text-wrap">
+                    Your transaction has been completed. <br/>
+                    You purchased $ {{total}}.
+                </h6>
+
+                <div class="btn-holder animate__animated animate__slideInUp  animate__delay-1s ion-padding">
+                    <ion-button (click)="goHome()" expand="block" class="big-btn">
+                      <ion-label style="color:white">Continue</ion-label>
+                    </ion-button>
+                  </div>
+            </div>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

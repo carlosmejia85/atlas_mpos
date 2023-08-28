@@ -1,0 +1,74 @@
+ion-toolbar
+{
+    --background: #F1FFFA;
+}
+ion-content
+{
+    .today-summary
+    {
+        background: #F1FFFA;
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+        ion-row
+        {
+            ion-item
+            {
+                --background: transparent;
+                --padding-start:0;
+
+                ion-label
+                {
+                    h4
+                    {
+                        color: #121826;
+                        margin: 5px 0;
+                    }
+            
+                    h6
+                    {
+                        color: #121826;
+                        opacity: 0.7;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .section
+    {
+        .section-title
+        {
+            h6
+            {
+              color: #2442a3;  
+            }
+        }
+    }
+
+    .chart-holder
+    {
+        padding-bottom: 20px;
+    }
+
+    .seg-holder
+    {
+        ion-segment
+        {
+            --background: transparent;
+            
+
+            ion-segment-button
+            {
+                --background-checked:transparent;
+                --border-radius: 12px;
+                --indicator-color:#2333c2;
+                --indicator-box-shadow:0;
+                --color-checked:#ffffff;
+            }
+
+        }
+
+
+    }
+}

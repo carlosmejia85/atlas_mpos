@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      {{ 'Signature.PageTitle' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="view == 'false'" id="div1" class="ion-full-height signature-container signature_div" >
+    
+    <canvas #canvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"  class="div2"></canvas>
+
+    <ion-grid  *ngIf="view == 'false'" >
+      <ion-row >
+        <ion-col size="6">
+          <ion-button color="danger" (click)="clearPad()">{{ 'Signature.Clear' | translate }}</ion-button>
+        </ion-col>
+        <ion-col size="4" offset="2" >
+          <ion-button  color="secondary" (click)="savePad()">{{ 'Signature.Save' | translate }}</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-grid  *ngIf="view == 'true'" >
+     
+    <ion-img src='{{ currentTransaction.signature }}'></ion-img>
+    <ion-row justify-content-center align-items-center>
+      <ion-col style="text-align: center;" size="12">
+        <ion-button color="danger" (click)="goBack()">{{ 'Signature.GoBack' | translate }} </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,81 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="tabs/tab5"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center"> Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-img-holder ion-text-center">
+    <ion-avatar>
+      <img class="profile-img" src="assets/imgs/avatar.png" alt="">
+
+    </ion-avatar>
+    <div class="btn ion-activatable flex al-center jc-center ripple-parent">
+      <img src="assets/imgs/icncam.svg" alt="">
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </div>
+  </div>
+
+  <div class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="the-form">
+
+    <div class="input-holder">
+      <ion-label >Full name</ion-label>
+      <div class="input-item">
+        <ion-item lines="none">
+          <ion-input type="text" placeholder="John Doe"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="input-holder">
+      <ion-label >Email</ion-label>
+      <div class="input-item">
+        <ion-item lines="none">
+          <ion-input type="email" placeholder="abc@def.com"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="input-holder">
+      <ion-label >Password</ion-label>
+      <div class="input-item">
+        <ion-item lines="none">
+        
+          <ion-input [type]="ptype" placeholder="****"></ion-input>
+          <ion-button class="visible-btn" fill="clear" (click)="changeType()" slot="end">
+            <ion-icon slot="icon-only" name="eye-outline" *ngIf="ptype!='password'"></ion-icon>
+            <ion-icon slot="icon-only" name="eye-off-outline" *ngIf="ptype=='password'"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="input-holder">
+      <ion-label >Phone number</ion-label>
+      <div class="input-item">
+        <ion-item lines="none">
+          <ion-input type="tel" placeholder="+94711234568"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="btn-holder ion-padding-vertical">
+      <ion-button expand="block" class="big-btn">
+        Save
+      </ion-button>
+    </div>
+   
+
+    
+    
+
+  
+  </div>
+</ion-content>

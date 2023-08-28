@@ -1,0 +1,33 @@
+ion-content
+{
+    .holder
+    {
+        .img-holder
+        {
+            img
+            {
+                height: 30vh;
+            }
+        }
+
+        h2
+        {
+            color:  #121826;
+            font-family: 'Bold';
+        }
+
+        h6
+        {
+            color:  #6C727F;
+            font-family: 'Regular';
+            line-height: 24px;
+
+        }
+    }
+
+    .btn-holder
+    {
+
+        margin-top: 8vh;
+    }
+}

@@ -1,0 +1,186 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+  <ion-buttons slot="start">
+       <!--<ion-back-button defaultHref="tabs/tab1" icon="chevron-back"></ion-back-button>-->
+    <ion-button (click)="goToHome()" >
+      <ion-icon slot="start" name="chevron-back"></ion-icon>
+    </ion-button> 
+  </ion-buttons>
+    <ion-title>{{ 'TransactionView.Title' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>{{ 'TransactionView.Information' | translate }}</ion-label>
+    </ion-list-header>
+
+    <ion-list class="list-custom" lines="full">
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Amount' | translate }}</p>
+        </ion-label>
+        <ion-badge *ngIf="current_transaction.voided == true"  color="danger" mode="ios" slot="end">- $ {{ current_transaction.total_amount  | number : '1.2-2' }}</ion-badge>
+        <ion-badge *ngIf="current_transaction.voided == false" color="success" mode="ios" slot="end">  $ {{ current_transaction.total_amount  | number : '1.2-2' }}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Status' | translate }}</p>
+        </ion-label>
+        <ion-input *ngIf="current_transaction.voided == false" readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" [(ngModel)]="transactionName"></ion-input>
+        <ion-input *ngIf="current_transaction.voided == true"  readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="Voided"   ></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="current_transaction.trxId == 'installment'">
+        <ion-label>
+          <p>{{ 'Transaction.Quota' | translate }}</p>
+        </ion-label>
+        <ion-input  readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" [(ngModel)]="current_transaction.quotas"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Card' | translate }}</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="{{current_transaction.card }}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.EntryMode' | translate }}</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="{{ entryMode }}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Date' | translate }}</p>
+        </ion-label> 
+
+       
+        <ion-label class="font-size-small ion-text-right ion-no-padding-end">
+          {{current_transaction.trx_date }} / {{current_transaction.trx_time}}
+        </ion-label>
+        <!-- <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="{{current_transaction.trx_date }} / {{current_transaction.trx_time}}"></ion-input> -->
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Note' | translate }}</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="{{ current_transaction.note }}"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.TransactionID' | translate }}</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="{{ current_transaction.auth }}"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>
+          <p>{{ 'TransactionView.Settled' | translate }}</p>
+        </ion-label>
+        <ion-input *ngIf="current_transaction.settled == false" readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="No"></ion-input>
+        <ion-input *ngIf="current_transaction.settled == true"  readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" [(ngModel)]="yes_label"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <hr class="hr-medium">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>{{ 'TransactionView.Actions' | translate }}</ion-label>
+    </ion-list-header>
+
+    <ion-list class="list-custom" lines="full">
+      <ion-item detail="false" (click)="viewSignature()">
+        <ion-avatar slot="start" class="ion-avatar-default-icon">
+          <ion-icon color="primary" name="receipt"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ 'TransactionView.Signature' | translate }}</h3>
+          <p class="font-size-smallest">{{ 'TransactionView.ViewDigitalSignature' | translate }}</p>
+        </ion-label>
+        <ion-button style="color: white;" slot="end">
+          {{ 'TransactionView.View' | translate }}
+        </ion-button>
+      </ion-item>
+
+      <ion-item button *ngIf="current_transaction.voided == false && current_transaction.settled === false " (click)="askVoidTransaction()" >
+        <ion-avatar slot="start" class="ion-avatar-default-icon">
+          <ion-icon color="primary" name="chatbox"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ 'TransactionView.Void' | translate }}</h3>
+          <p class="font-size-smallest">{{ 'TransactionView.VoidTitle' | translate }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list-header >
+      <ion-label>{{ 'TransactionView.ReceiptOptions' | translate }}</ion-label>
+    </ion-list-header>
+
+    <ion-list  class="list-custom" lines="full" >
+      
+        <ion-item >
+
+          <ion-avatar slot="start" class="ion-avatar-default-icon">
+            <ion-icon color="primary" name="mail-outline"></ion-icon>
+          </ion-avatar>
+
+          <ion-label>
+            <ion-input placeholder="example@mail.com"  class="font-size-small" [(ngModel)]="current_transaction.toEmail" (ionInput)='onEmailChange($event)'></ion-input>
+            <p class="font-size-smallest"> {{ 'TransactionView.CustomerEmailAddress' | translate }}  </p>
+            <ion-text *ngIf="emailError==true" color="danger">
+              <small class="error-message-form">{{ 'TransactionView.EmailAddressNotValid' | translate }}</small>
+            </ion-text>
+          </ion-label>
+      
+          <ion-button style="color: white;" slot="end" (click)="sendEmail()">
+            {{ 'TransactionView.Send' | translate }} 
+          </ion-button>
+    
+        </ion-item>
+
+        <ion-item >
+               
+         <!--
+          <ion-avatar slot="start" class="ion-avatar-default-icon">
+            <ion-icon color="primary" name="call-outline"></ion-icon>
+          </ion-avatar>
+        -->
+        <ion-select  slot="start" [(ngModel)]='prefix' (ionChange)="handleChange($event)" >
+          <ion-select-option value="+507">
+           PANAMA
+          </ion-select-option>
+          <ion-select-option value="+1">
+           USA
+          </ion-select-option>
+        </ion-select>
+
+        <div>
+          <ion-input placeholder="0000 0000" type="text" inputmode="tel" maxlength="13" [(ngModel)]="current_transaction.toCellphone" ></ion-input>
+          <p class="font-size-smallest"> {{ 'TransactionView.CustomerTelephone' | translate }}  </p>
+
+        <ion-text *ngIf="cellPhoneError==true" color="danger">
+          <small class="error-message-form">{{ 'TransactionView.CustomerTelephoneNotValid' | translate }}</small>
+        </ion-text>
+      </div>
+      
+          <ion-button style="color: white;" slot="end" (click)="sendSMS()">
+            {{ 'TransactionView.Send' | translate }} 
+          </ion-button>
+    
+        </ion-item>
+
+        
+    </ion-list>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,94 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-title mode="md" class="ion-text-center">Select Currencies</ion-title>
+  <ion-buttons slot="end">
+    <ion-button fill="clear" (click)="close()">
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding-horizontal">
+
+  <div class="seg-holder">
+    <ion-segment mode="md" [value]="method" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="from">
+        <ion-label class="flex al-center">from <span>&nbsp;{{fromCurrency}}</span>
+          <div *ngFor="let data of currencies | filter:filterTerm">
+            <ng-container *ngIf="data.value == fromCurrency">
+              <img [src]="data.icon" alt="" slot="start">
+            </ng-container>
+          </div>
+        </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="to">
+        <ion-label class="flex al-center">to<span>&nbsp;{{toCurrency}}</span>
+          <div *ngFor="let data of currencies | filter:filterTerm">
+            <ng-container *ngIf="data.value == toCurrency">
+              <img [src]="data.icon" alt="" slot="start">
+            </ng-container>
+          </div>
+        </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div class="section" *ngIf="method=='from'">
+    <div class="title">
+      <h3>Convert From</h3>
+    </div>
+
+    <div class="search-holder">
+      <ion-searchbar placeholder="Search..." [(ngModel)]="filterTerm" animated="true"></ion-searchbar>
+    </div>
+
+    <ion-list mode="md">
+      <ion-radio-group name="auto" [value]="fromCurrency" (ionChange)="setFromCurency($event)">
+        <div  *ngFor="let data of currencies | filter:filterTerm">
+          <ng-container *ngIf="data.value != toCurrency">
+          <ion-item lines="none" mode="md">
+            <img [src]="data.icon" alt="" slot="start">
+            <ion-label>{{data.name}}</ion-label>
+            <ion-radio [value]="data.value"></ion-radio>
+          </ion-item>
+          </ng-container>
+        </div>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+
+  <div class="section" *ngIf="method=='to'">
+    <div class="title">
+      <h3>Convert to</h3>
+    </div>
+
+    <div class="search-holder">
+      <ion-searchbar placeholder="Search..." [(ngModel)]="filterTerm" animated="true"></ion-searchbar>
+    </div>
+
+    <ion-list mode="md">
+      <ion-radio-group name="auto" [value]="toCurrency" (ionChange)="setToCurency($event)">
+        <div *ngFor="let data of currencies | filter:filterTerm">
+          <ng-container *ngIf="data.value != fromCurrency">
+            <ion-item>
+              <img [src]="data.icon" alt="" slot="start">
+              <ion-label>{{data.name}}</ion-label>
+              <ion-radio [value]="data.value"></ion-radio>
+            </ion-item>
+          </ng-container>
+        </div>
+
+
+      </ion-radio-group>
+    </ion-list>
+  </div>
+
+  <div class="btn-holder ion-text-center">
+    <ion-button (click)="close()">
+      Done
+    </ion-button>
+  </div>
+
+</ion-content>

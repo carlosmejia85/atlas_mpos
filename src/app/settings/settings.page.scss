@@ -1,0 +1,32 @@
+ion-content
+{
+    .section
+    {
+        margin: 20px 0;
+        .h7
+        {
+            color: #6C727F;
+            font-family: 'Bold' !important;
+            margin: 0;
+        }
+        ion-item
+        {
+            --padding-start:0;
+            ion-label
+            {
+                font-family: 'Bold';
+                font-size: 14px;
+                h6
+                {
+                    font-family: 'Bold' !important;
+                    font-size: 14px !important;
+                }
+
+                .p3
+                {
+                    color: #6C727F !important;
+                }
+            }
+        }
+    }
+}

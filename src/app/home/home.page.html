@@ -1,0 +1,143 @@
+<ion-content class="ion-padding">
+  <div class="top-item">
+    <ion-item lines="none">
+
+      <div class="logo-container">
+        <ion-row justify-content-center align-items-center >
+          <ion-col >
+            <div text-center >
+              <img src="./assets/titan_mpos_750_248.png">
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </div>
+    </ion-item>
+  </div>
+
+  <balancecard  cardTitle="{{ 'Home.YourTotal' | translate }}" 
+                saleTitle="{{ 'Home.SaleTitle' | translate }}" 
+                voidTitle="{{ 'Home.VoidTitle' | translate }}" 
+                revTitle ="{{ 'Home.RevTitle' | translate }}" 
+                mainAmount="{{saleAmount}}" [showStatus]="true" subAmount="{{voidAmount}}" voidPercentage="{{voidPercentage}}" salePercentage="{{salePercentage}}" ></balancecard>
+
+  <div class="section">
+    <div class="section-title flex al-center jc-between">
+      <h4>{{ 'Home.LastTrx' | translate }}</h4>
+      <h6 routerLink="/status">{{ 'Home.ViewAll' | translate }}</h6>
+    </div>
+
+    <div class="slider-holder" *ngIf="transactions.length > 0">
+      <swiper #swiper [config]="SwiperConfig" >
+        <ng-template *ngFor="let trx of transactions | slice:0:2 "  swiperSlide>
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="12">
+              
+                <div  *ngIf="trx.voided == false" [ngClass]="{'batched': trx.settled === true}">
+                  <stockcardshort 
+                    *ngIf="trx.voided == false" 
+                    imgPath="assets/imgs/money_circulation.png" 
+                    mainAmount="{{trx.total_amount}}" 
+                    comShortName="{{trx.trxId}}"
+                    comName="{{trx.trx_date_string}}"
+                    routerLink="viewtransaction" 
+                    [queryParams]="{ id: trx.id }"
+                    ></stockcardshort>
+              </div>
+
+              <div  *ngIf="trx.voided == true" [ngClass]="{'batched': trx.settled === true}">
+                  <stockcardshort 
+                  *ngIf="trx.voided == true" 
+                  imgPath="assets/imgs/cancel_void.png" 
+                  mainAmount="{{trx.total_amount}}" 
+                  comShortName="VOID"
+                  comName="{{trx.trx_date_string}}"
+                  routerLink="viewtransaction" 
+                  [queryParams]="{ id: trx.id }"
+                  ></stockcardshort> 
+              </div>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+
+        <!--
+        <ng-template swiperSlide>
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="12">
+                <stockcardshort imgPath="assets/imgs/cancel_void.png" mainAmount="150.51" comShortName="VOID"
+                  comName="Warehouse Utilities" variantAmount="0.090" isup="down"></stockcardshort>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="12">
+                <stockcardshort imgPath="assets/imgs/fb.svg" mainAmount="365.51" comShortName="FB"
+                  comName="Facebook, Inc" variantAmount="2.16" isup="up"></stockcardshort>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+
+        <ng-template swiperSlide>
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="12">
+                <stockcardshort imgPath="assets/imgs/apple.svg" mainAmount="150.51" comShortName="AC"
+                  comName="Apple COP." variantAmount="0.090" isup="down"></stockcardshort>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+-->
+      </swiper>
+    </div>
+
+    <div  *ngIf="transactions.length == 0"> <p>{{ 'Home.NoTransactions' | translate }}</p> </div>
+
+  </div>
+
+  <div class="section">
+     <!-- 
+    <div class="section-title flex al-center jc-between" >
+      <h4>{{ 'Home.UsefulInformation' | translate }} </h4>
+    </div>
+  -->
+
+    <!--
+    <div *ngIf="ShowCharts">
+      <chartcard imgPath="assets/imgs/twitter.svg"  comShortName="TWTR" comName="Twitter Inc" [mainAmount]="'63.98'" [precentAmount]="'0.23'" [data]="[10, 41, 35, 51, 49, 62, 69, 91, 148]" isup="down"></chartcard>
+  
+      <chartcard imgPath="assets/imgs/google.svg"  comShortName="GOOGL" comName="Google Inc" [mainAmount]="'200.84'" [precentAmount]="'0.58'" [data]="[5, 30, 25, 39, 30, 52, 49, 80, 120]" isup="up"></chartcard>
+     
+    </div>
+  -->
+
+  <!-- 
+  <div class="topics-holder ion-padding-vertical">
+    <div class="slider-holder animate__animated animate__slideInRight">
+      <swiper #swiper [config]="SwiperConfig">
+        <ng-template swiperSlide *ngFor="let title of titles">
+          <ion-grid fixed>
+            <ion-row>
+              <ion-col size="12">
+                <topic-card [bgColor]="title.cardbg" [topicimg]="title.topicimg" [fulltopic]="title.fulltopic" [title]="title.title">
+                </topic-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ng-template>
+
+      </swiper>
+    </div>
+  </div>
+  -->
+  </div>
+</ion-content>

@@ -1,0 +1,22 @@
+
+ion-content
+{
+    .img-holder
+    {
+        margin: 2vh;
+        img
+        {
+            height: 20vh;
+        }
+    }
+    .bottom-holder
+    {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+
+     
+    }
+}

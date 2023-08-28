@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="buystock" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="content-holder ion-text-center">
+    <div class="img-holder animate__animated animate__zoomIn">
+      <img [src]="stock?.icon" alt="">
+    </div>
+    <h4 class="animate__animated animate__zoomIn animate__delay-1s">{{stock?.name}}</h4>
+    <h6 class="animate__animated animate__zoomIn animate__delay-2s">{{stock?.fullname}}</h6>
+
+    <h1>${{amount}}</h1>
+  </div>
+
+
+  <div class="hint-holder">
+    <ion-item lines="none">
+      <div class="thumb flex al-center jc-center" slot="start">
+        <ion-icon name="alert"></ion-icon>
+      </div>
+      <ion-label class="ion-text-wrap">You can buy stock with a bank account or debit card.</ion-label>
+    </ion-item>
+  </div>
+
+  <div class="bottom-sheet ion-padding">
+    <div class="title-holder">
+      <h4>Choose Payment Method</h4>
+    </div>
+
+    <div class="payment-selector" >
+
+      <ion-item lines="none" button detail="false" *ngIf="selectedmethod == ''" (click)="presentModal()">
+        <div class="thumb flex al-center jc-center" slot="start">
+          <img src="assets/imgs/dbcard.svg" alt="">
+        </div>
+        <ion-label>
+          <h4>Debit Card</h4>
+          <h6 class="h7">Invest small amounts</h6>
+        </ion-label>
+        <ion-icon slot="end" name="caret-down"></ion-icon>
+      </ion-item>
+      
+     
+      <div *ngFor="let method of methods">
+        <ion-item lines="none"  *ngIf="selectedmethod == method.value" (click)="presentModal()">
+          <div class="thumb flex al-center jc-center" slot="start">
+            <img [src]="method.icon" alt="">
+          </div>
+          <ion-label>
+            <h4>{{method.methodname}}</h4>
+            <h6 class="h7">{{method.desc}}</h6>
+          </ion-label>
+        </ion-item>
+      </div>
+    
+
+      <div class="btn-holder ion-padding-vertical">
+        <ion-button (click)="goConfirmOrder()" expand="block" class="big-btn">
+          Continue
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

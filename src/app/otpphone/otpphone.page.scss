@@ -1,0 +1,50 @@
+ion-content
+{
+    .title-holder
+    {
+        h2
+        {
+            margin: 0;
+        }
+
+        p
+        {
+            color: #6C727F;
+            margin-top: 10px;
+        }
+    }
+
+    .the-form
+    {
+        margin-top: 20px;
+
+        ion-item
+        {
+            .visible-btn
+            {
+                color: #D3D5DA;
+                margin-top: 20px;
+            }
+        }
+
+    
+    }
+
+    .bottom-holder
+    {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+
+        p
+        {
+            span
+            {
+                color: var(--ion-color-primary);
+                font-family: 'Bold' !important;
+            }
+        }
+    }
+}

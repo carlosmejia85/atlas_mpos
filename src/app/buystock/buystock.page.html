@@ -1,0 +1,129 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center"> {{ Title }}  </ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+       
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<!--
+  <div class="content-holder ion-text-center">
+    <div class="img-holder animate__animated animate__zoomIn">
+      <img [src]="stock?.icon" alt="">
+    </div>
+    <h4 class="animate__animated animate__zoomIn animate__delay-1s">{{stock?.name}}</h4>
+    <h6 class="animate__animated animate__zoomIn animate__delay-2s">{{stock?.fullname}}</h6>
+  </div>
+-->
+
+  <div class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="ion-text-center">
+    <ion-label>{{ 'Transaction.BaseAmount' | translate }} </ion-label>
+  </div>
+
+  <div class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1>$</h1>
+    <ion-input type="text" inputmode="tel" class="ion-text-center" placeholder="0.00" [(ngModel)]="baseAmount" (ionInput)='onBaseAmountChange($event)'></ion-input>
+  </div>
+
+  <div class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="ion-text-center" *ngIf="isTipEnabled">
+    <ion-label >{{ 'Transaction.SuggestedTip' | translate}} ( {{selected_tip}} %)</ion-label>
+  </div>
+  
+  <ion-row class="btns-holder ion-text-center" *ngIf="isTipEnabled">
+    <ion-col size="3" *ngIf="tipAmount1 > 0">
+      <ion-button class="ion-text-center"  (click)="calculateTip(tipAmount1)" expand="block" shape="round">
+        {{tipAmount1}} %
+      </ion-button>
+    </ion-col>
+    <ion-col size="3" *ngIf="tipAmount2 > 0">
+      <ion-button (click)="calculateTip(tipAmount2)" expand="block" shape="round">
+        {{tipAmount2}} %
+      </ion-button>
+    </ion-col>
+    <ion-col size="3" *ngIf="tipAmount3 > 0">
+      <ion-button (click)="calculateTip(tipAmount3)" expand="block" shape="round">
+        {{tipAmount3}} %
+      </ion-button>
+    </ion-col>
+    <!--
+    <ion-col size="3">
+      <ion-button (click)="calculateTip(tipAmount4)" expand="block" shape="round">
+        {{tipAmount4}} %
+      </ion-button>
+    </ion-col>
+    -->
+  </ion-row>
+
+  <div *ngIf="isTipEnabled" class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1>$</h1>
+    <ion-input disabled class="ion-text-center" placeholder="0.00" [(ngModel)]="tipAmount" (ionInput)='onOverChargedAmountChange($event)'></ion-input>
+  </div>
+
+  <div *ngIf="isTipEnabled" class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="ion-text-center" *ngIf="isInstallmentEnabled">
+    <ion-label >{{ 'Transaction.Quota' | translate }} </ion-label>
+  </div>
+
+  <div *ngIf="isInstallmentEnabled" class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1>#</h1>
+    <ion-input   type="text" inputmode="tel"  class="ion-text-center" placeholder="0" [(ngModel)]="quotas"  (ionInput)='onQuotaChange($event)'></ion-input>
+  </div>
+
+  <div *ngIf="isInstallmentEnabled" class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="ion-text-center" *ngIf="isOverChargedEnabled">
+    <ion-label >{{'Transaction.OverCharged' | translate}} ({{ surchargePercentage }} % )  </ion-label> 
+  </div>
+  <div *ngIf="isOverChargedEnabled" class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1 class="ion-text-center">$</h1>
+    <ion-input disable type="text" inputmode="tel" class="ion-text-center" placeholder="0.00" [(ngModel)]="overChargedAmount" (ionInput)='onOverChargedAmountChange($event)'></ion-input>
+  </div>
+
+  <div class="ion-text-center" *ngIf="isTaxEnabled">
+    <ion-label >{{'Transaction.TaxAmount' | translate}} ({{ taxPercentage }} %)</ion-label>
+  </div>
+  <div *ngIf="isTaxEnabled" class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1>$</h1>
+    <ion-input type="text" inputmode="tel" class="ion-text-center" placeholder="0.00" [(ngModel)]="taxAmount" (ionInput)='onTaxAmountChange($event)'></ion-input>
+  </div>
+
+  <div *ngIf="isTaxEnabled" class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="ion-text-center" >
+    <ion-label>{{'Transaction.TotalAmount' | translate}} </ion-label>
+  </div>
+  
+  <div class="input-holder animate__animated animate__zoomIn flex al-center">
+    <h1>$</h1>
+    <ion-input class="ion-text-center" placeholder="0.00" [(ngModel)]="totalAmount" disabled></ion-input>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border animate__animated animate__zoomIn" class="ion-padding">
+  <ion-button style="color: white" (click)="goChoosePayment(totalAmount)" expand="block" class="big-btn">
+    {{'Transaction.Continue' | translate}} 
+  </ion-button>
+</ion-footer>

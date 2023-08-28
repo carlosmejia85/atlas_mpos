@@ -1,0 +1,31 @@
+
+html,
+body {
+  --ion-font-family: "Inter" !important;
+  font-family: "Inter" !important;
+  --ion-background-color: #ffffff;
+  --ion-background-color-rgb: 20, 26, 31;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+.signature_div
+ {
+  position: absolute;
+  width: calc(100% );
+  height: calc(100% - 100px);
+  border: 1px solid black;
+  border-style: dotted;
+  border-width: thick;
+  background-color: white;
+  //padding: 10px;
+  text-align: center;
+}
+
+.div2 { 
+  height: 100%; 
+  width: 100%; 
+  object-fit:cover; 
+}

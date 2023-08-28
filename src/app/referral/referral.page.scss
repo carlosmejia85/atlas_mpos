@@ -1,0 +1,54 @@
+ion-content
+{
+    .holder
+    {
+        .img-holder
+        {
+            img
+            {
+                height: 40vh;
+            }
+        }
+
+        h2
+        {
+            color:  #121826;
+            font-family: 'Bold';
+        }
+
+        h6
+        {
+            color:  #6C727F;
+            font-family: 'Regular';
+            line-height: 24px;
+
+        }
+    }
+
+    .coupon-holder
+    {
+        border: 1px dashed var(--ion-color-primary);
+        border-radius: 16px;
+        background: #F4FCED;
+        margin: 10vh 20px 20px 20px;
+        ion-item
+        {
+            --background: transparent;
+            min-height: 3rem !important;
+            ion-label
+            {
+                color: #121826;
+                font-family: 'Bold';
+                font-size: 16px;
+            }
+            .end-slot
+            {
+                h6
+                {
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+    }
+
+}

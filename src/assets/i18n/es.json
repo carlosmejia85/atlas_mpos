@@ -1,0 +1,263 @@
+{
+
+    "SignIn": 
+    {
+        "Title1": "Entremos al sistema", 
+        "Title2": "¡Bienvenido!, es bueno que estés de regreso"     ,
+        "SigninMessage"     : "Escriba tus credenciales"            , 
+        "EmailAddress"      : "Usuario o Correo"                    ,      
+        "Password"          : "Contraseña"                          ,
+        "ForgotPassword"    : "¿Olvidaste tu contraseña?"           , 
+        "NoAccount"         : "¿Ya tienes una cuenta? "             , 
+        "SignUp"            : "Crear Cuenta"                        ,
+        "FingerPrint"       : "Pon tu dedo o muestra tu cara"       ,
+        "RememberMe"        : "Recordar nombre de usuario"          , 
+        "Buttons"           :
+        {   
+            "SignIn" : "Entrar al Sistema"
+        },
+        "Messages"          : 
+        {
+            "Information"           : "Información"                                                 ,
+            "BadCredentials"        : "Usuario o Password incorrecto"                               , 
+            "EmailPasswordRequired" : "Correo es requerido"                               , 
+            "Authenticating"        : "<p>Autenticando...<br/>Espere, por favor</p><span>.</span>"  , 
+            "BiometricFailed"       : "Verificación biométrica ha fallado."                         , 
+            "LoginTimeout"          : "Tiempo Agotado"                                              , 
+            "ErrorCreatingAccount"  : "Error creando la cuenta."                                    ,
+            "NoDevicePaired"        : "Primero empareje un dispositivo."                              
+        } 
+    }, 
+    "Home" : 
+    {
+        "LastTrx"           : "Últimas Transacciones"   , 
+        "ViewAll"           : "Ver todo"                ,
+        "NoTransactions"    : "Sin Transacciones"       , 
+        "UsefulInformation": "Información Útil"         ,
+        "YourTotal"         : "Total"                   ,
+        "SaleTitle"         : "CMP"                     ,
+        "VoidTitle"         : "ANUL"                    ,
+        "RevTitle"          : "REV"
+    },
+    "Portafolio" : 
+    {
+        "Title"          : "Información del Lote"   , 
+        "Void"           : "Anulación"              , 
+        "Sale"           : "Ventas"                 , 
+        "BatchTotal"     : "Total Lote"             ,
+        "OneWeek"        : "1S"                     ,
+        "OneMonth"       : "1M"                     ,    
+        "OneYear"        : "1A"    
+    } , 
+    "Tabs" : 
+    {
+        "Home"           : "Inicio"               , 
+        "Batch"          : "Lote"                 , 
+        "Transactions"   : "Transacciones"        ,     
+        "Profile"        : "Perfil"               ,
+        "Sale"           : "Compra"               ,
+        "Points"         : "Puntos"               , 
+        "PointsBalance"  : "Consulta de Puntos"   , 
+        "Refund"         : "Reembolso"            ,
+        "Installments"   : "Cuotas"               ,
+        "Settlement"     : "Cierre" 
+    } , 
+    "Transactions" : 
+    {
+        "Title"           : "Transacciones"             , 
+        "History"         : "Historial"                 , 
+        "RecentOrder"     : "Transacciones recientes"        
+       
+    } , 
+    "Profile" : 
+    {
+        "Title"                     : "Perfil"                          , 
+        "TerminalConfiguration"     : "Configuración del Terminal"      , 
+        "EmvConfiguration"          : "Descargar Configuración Emv"     , 
+        "Language"                  : "Idiomas"                         ,
+        "Settings"                  : "Configuración"                   ,
+        "FAQ"                       : "FAQ"                             ,
+        "Logout"                    : "Salir"                           ,
+        "Title2" : "Nos gustaría escuchar su retroalimentación."
+    } , 
+    "TransactionView" : 
+    {
+        "Title"                 : "Visor de Transacción "               , 
+        "Information"           : "Información"                         , 
+        "Amount"                : "Monto"                               , 
+        "Status"                : "Estado"                              , 
+        "Card"                  : "Tarjeta"                             , 
+        "EntryMode"             : "Modo de Entrada"                     , 
+        "Date"                  : "Fecha"                               , 
+        "Note"                  : "Nota"                                ,       
+        "TransactionID"         : "Transaction-ID"                      ,
+        "Actions"               : "Acciones"                            ,
+        "Signature"             : "Firma"                               , 
+        "ViewDigitalSignature"  : "Ver Firma Digital"                   , 
+        "View"                  : "Ver"                                 , 
+        "Void"                  : "Anular"                              , 
+        "VoidTitle"             : "Esta acción anulará la transacción"  , 
+        "CustomerEmailAddress"  : "Escriba su correo electrónico para enviar el recibo",
+        "EmailAddressNotValid"  : "Correo Electrónico no válido."       , 
+        "Send"                  : "Enviar"                              ,
+        "VoidThisTransaction"   : "Anular esta transacción"             , 
+        "SelectAction"          : "Seleccionar acción"                  , 
+        "Cancel"                : "Cancelar"                            ,   
+        "ProcessingTransaction" : "<p>Procesando Transacción...</p> </br> <span>Espere un momento, por favor</span>'"   , 
+        "VoidSuccess"           : "Anulación Exitosa"                                                                   ,
+        "VoidError"             : "Error al procesar la transacción"                                                    , 
+        "SendMailMessage"       : "<p>Enviando recibo al correo...</p> </br> <span>Espere un momento, por favor</span>" ,
+        "EmailError"            : "Error al enviar el correo"                                                           , 
+        "ReceiptOptions"        : "Opciones de recibo para el cliente"                                                  ,
+        "CustomerTelephone"     : "Número Telefónico del Cliente"                                                       , 
+        "CustomerTelephoneNotValid" : "Número de teléfono es inválido"                                                  , 
+        "SendSMSMessage"        : "<p>Enviando recibo por SMS...</p> </br> <span>Espere un momento, por favor</span>"   , 
+        "SMSError"              : "Error al enviar el SMS"                                                              ,
+        "Settled"               : "Cerrada"                                                                             , 
+        "NotSettled"            : "Sin Cerrar"                                                                          , 
+        "Yes"                   : "Sí"                                      
+    }, 
+    "TerminalConfig" : 
+    {
+        "Title"                 : "Configuración de la Terminal"    , 
+        "TerminalId"            : "Id de la Terminal"               ,
+        "MerchantId"            : "Id del Comercio"                 , 
+        "Tip"                   : "Propina"                         , 
+        "Tax"                   : "Impuesto"                        ,
+        "Cancel"                : "Cancelar"                        , 
+        "TaxSettings"           : "Configuración de Impuesto"       ,    
+        "EnabledTax"            : "Habilitar Impuesto"              ,
+        "TipSettings"           : "Configuración de Propina"        ,
+        "Save"                  : "Guardar"                         ,
+        "EnabledTip"            : "Habilitar Propina"               ,
+        "ErrorNumberGreater"    : "Número no debe ser mayor a 100"  , 
+        "Max8"                  : "Terminal id. Max 8 dígitos"      , 
+        "Max15"                 : "Merchant id. Max 15 dígitos"     , 
+        "OverCharged"           : "Habilitar Sobrecargo"            ,
+        "EnabledPoints"         : "Habilitar Puntos"                ,
+        "EnabledRefund"         : "Habilitar Reembolso"             ,
+        "EnabledInstallments"   : "Habilitar Cuotas"                , 
+        "SurchargeSettings"     : "Configuración de Sobrecargo"     , 
+        "Surcharge"             : "Sobrecargo"                      , 
+        "Timeout"               : "Tiempo de Espera"                ,
+        "TimeoutMax2"           : "Máximo 2 digitos"                , 
+        "TerminalIdRequired"    : "Configure el Terminal Id en Configuración de la Terminal" ,
+        "MerchantIdRequired"    : "Configure el Merchant Id en Configuración de la Terminal"      
+    }, 
+    "FAQ" : 
+    {
+        "Title1"                : "Preguntas sobre"                 , 
+        "SubTitle1"             : "Como iniciar"                    ,
+        "Title2"                : "¿Cómo se configura propina?"     , 
+        "Title3"                : "Impuesto automático"             ,
+        "PageTitle"             : "FAQ"                             ,
+        "SearchPlaceholder"     : "Escriba su pregunta ..."         ,
+        "TopQuestions"          : "Pregunts más solicitadas"        , 
+        "ViewAll"               : "Ver Todo"                        ,
+        "CreateAccount"         : "¿Cómo crear una cuenta?"         , 
+        "Visit1"                : "Visite el sitio web atlasbank.com, luego vaya a la sección Crear cuenta y siga las instrucciones.", 
+        "AddPaymentMethod"      : "¿Cómo agregar un método de pago?" ,
+        "Visit2"                : "Visite el sitio web atlasbank.com, luego vaya a la sección Crear cuenta y siga las instrucciones.", 
+        "HowToInvest"           : "¿Cómo invertir?", 
+        "PaymentMethods"        : "Métodos de Pago"
+    }, 
+    "Settings" : 
+    {
+        "Title"                 : "Configuración"                       , 
+        "General"               : "General"                             , 
+        "Contactus"             : "Contáctanos"                         ,
+        "Security"              : "Seguridad"                           ,
+        "FingerPrintFaceID"     : "Huella y Reconocimiento facial"      , 
+        "PrivacyPolicy"         : "Política de Privacidad"              , 
+        "ChooseData"            : "Elige que Información compartes"     , 
+        "Legal"                 : "Legal"   
+    }, 
+    "Signature" : 
+    {
+        "PageTitle" : "Firma"               , 
+        "Clear"     : "Limpiar"             ,
+        "Save"      : "Guardar"             ,
+        "GoBack"    : "Regresar"
+    }, 
+    "SignUp" : 
+    {
+        "Title1"            : "Empecemos"                               ,
+        "Title2"            : "¡Crea una cuenta para continuar!"        ,
+        "EmailAddress"      : "Correo Electrónico"                      , 
+        "Password"          : "Contraseña"                              ,
+        "ConfirmPassword"   : "Confirmar Contraseña"                    , 
+        "Agreement"         : "Acepto los términos de "                 , 
+        "Continue"          : "Continuar"                               ,
+        "AlreadyAccount"    : " ¿Ya tienes un cuenta? "                 , 
+        "Service"           : "Servicio "                               , 
+        "Policy"            : "y Política de Privacidad "               , 
+        "Signin"            : "Entrar al Sistema"                       ,
+        "PasswordNoMatch"   : "Las contraseñas no coinciden"            , 
+        "MustSelectAgreement"   : "Debes aceptar los términos para continuar.", 
+        "SendingRequest"      : "Enviado Petición ..."
+    }, 
+    "EmailAccount" : 
+    {
+        "Confirmation"      : "Confirma tu cuenta de correo"                                , 
+        "Title1"            : "Te hemos enviado un correo, por favor confirma tu cuenta."   , 
+        "Continue"          : "Continuar"                              
+    }, 
+    "Transaction": 
+    {
+        "Title"         : "Transacción de Compra"                                               , 
+        "BaseAmount"    : "Monto Base"                                                          ,
+        "TipAmount"     : "Monto de Propina"                                                    , 
+        "TaxAmount"     : "Monto de Impuesto"                                                   ,
+        "SuggestedTip"  : "Propinas Sugeridas"                                                  , 
+        "OverCharged"   : "Sobrecargo"                                                          , 
+        "TotalAmount"   : "Monto Total"                                                         ,
+        "Continue"      : "Continuar"                                                           , 
+        "ErrorGreater100"       : "El valor de la cuota no puede ser mayor o igual a 100"       , 
+        "Quota"                 : "Plazos"                                                      , 
+        "Zero"                  : "La cuota no puede ser cero"                                  , 
+        "ProcessingSettlement"  : "Procesando Cierre "                                          , 
+        "BatchEmpty"            : "Lote vacío"                                                  ,
+        "AmountZero"            : "El monto no puede ser cero."                                 ,
+        "AskSettle"             : "¿Quieres hacer el cierre?"                             
+    }, 
+    "Confirmation" : 
+    {
+        "Title"             : "Procesar Transacción"     , 
+        "TotalCost"         : "Costo Total"              , 
+        "PaymentDevice"     : "Dispositivo de Pago"      , 
+        "PaymentDetails"    : "Detalle del Pago"         , 
+        "Retry"             : "Reintentar"               , 
+        "Cancel"            : "Cancelar"                 , 
+        "TotalPoints"       : "Equivalencia en Puntos"
+    }, 
+    "PasswordRecovery" : 
+    {
+        "Title"             : "Recuperación de Contraseña"                  ,
+        "Title2"            : "Escribe tu correo para recuperar tu clave"   ,
+        "EmailAddress"      : "Correo Electrónico"                          ,       
+        "ErrorResetAccount" : "Hay un error al tratar de resetear su clave" , 
+        "Title3"            : "Escriba su password"    , 
+        "PasswordMismatched"    : "Las contraseñas no coinciden"    , 
+        "PasswordChangedOk"    : "La contraseña ha sido cambiada exitosamente." ,
+        "PasswordRequirementFailed" : "La contraseña no cumple con los requerimientos."                     
+    },
+    "Devices" : 
+    {
+        "Title"                     : "Dispositivos"                ,
+        "RegisteredDevices"         : "Dispositivos Registrados"    ,
+        "NewDevices"                : "Nuevos Dispositivos"         ,
+        "Selected"                  : "Seleccionado"                , 
+        "Scan"                      : "Escanear Nuevos Dispositivos", 
+        "Connect"                   : "Conectar"                    ,
+        "UnPair"                    : "Desemparejar"                , 
+        "Disconnect"                : "Desconectar"              
+    }, 
+    "OTPVerify" : 
+    {
+        "EnterAuthenticationCode"   : "Código de Autenticación", 
+        "Enter4DigitCode"           : "Escriba el código que se le mandó a su correo.", 
+        "ResendCode"                : "Reenviar Código", 
+        "Continue"                  : "Continuar"       , 
+        "ResendCodeMessage"         : "Hemos enviado el código a tu cuenta de correo."
+    }
+}

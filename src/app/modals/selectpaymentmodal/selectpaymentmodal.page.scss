@@ -1,0 +1,77 @@
+ion-toolbar
+{
+    --background: transparent;
+    position: absolute;
+    width: 100%;
+}
+ion-content
+{
+    --background: #F3FBED;
+    --padding-top:65px;
+    .the-list
+    {
+       
+        ion-item
+        {
+            --background: #E1FFF5;
+        border-radius: 16px;
+       
+        margin-top: 20px;
+            --padding-start:10px;
+            .thumb
+            {
+               background: white;
+                border-radius: 6px;
+                height: 40px;
+                width: 40px;
+                ion-icon
+                {
+                    color: #1B7A00;
+                }
+            }
+
+            ion-label
+            {
+                padding: 10px 0;
+                h6
+                {
+                    color: #121826;
+                    font-family: 'Bold';
+                    margin: 0;
+                }
+
+                .h7
+                {
+                    color: #6C727F !important;
+                    font-family: 'Regular' !important;
+                }
+        
+            }
+
+
+            ion-radio
+            {
+                --color: #96EED1;
+            }
+        }
+
+
+        .item-radio-checked
+        {
+            --background: white !important;
+            .thumb
+            {
+                background: var(--ion-color-primary);
+            }
+        }
+    }
+
+    .btn-holder
+    {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+     <ion-button >
+      <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+     </ion-button>
+    </ion-buttons>
+    <ion-title>Payment Method</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="the-list">
+      <ion-radio-group name="auto" [value]="Paymethod" (ionChange)="setMethod($event)">
+        <ion-item lines="none" *ngFor="let method of methods">
+          <div class="thumb flex al-center jc-center" slot="start">
+            <img [src]="method.icon" alt="">
+          </div>
+          <ion-label>
+            <h4>{{method.methodname}}</h4>
+            <h6 class="h7">{{method.desc}}</h6>
+          </ion-label>
+         <ion-radio [value]="method.value" mode="md"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+  </div>
+
+  <div class="btn-holder ion-padding">
+    <ion-button (click)="close(Paymethod)" expand="block" class="big-btn">
+      Continue
+    </ion-button>
+  </div>
+</ion-content>

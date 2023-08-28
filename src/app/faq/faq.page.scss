@@ -1,0 +1,46 @@
+ion-content
+{
+    .img-holder
+    {
+        margin-top: 2vh;
+        img
+        {
+            height: 12vh;
+        }
+    }
+    
+    .top-questions
+    {
+        .title-holder
+        {
+            margin-bottom: 20px;
+            h2
+            {
+                font-family: 'Bold';
+                font-size: 18px;
+                margin: 0;
+            }
+    
+            p
+            {
+                color: #1B7A00;
+                font-family: 'Bold';
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+
+        p
+        {
+            margin: 5px 0 !important;
+        }
+
+        ion-accordion
+        {
+            ion-item
+            {
+                --background: transparent;
+            }
+        }
+    }
+}

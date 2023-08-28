@@ -1,0 +1,54 @@
+
+
+ion-content
+{
+ 
+    .top-item
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        ion-item
+        {
+            background: transparent;
+            --padding-start:0;
+            ion-avatar
+            {
+                background: var(--ion-color-primary);
+            }
+
+            ion-label
+            {
+                h4
+                {
+                    color: #121826;
+                    font-size: 18px;
+                }
+
+                p
+                {
+                    color: #6C727F;
+                }
+            }
+        }
+    }
+
+    .section
+    {
+        margin: 20px 0;
+    }
+    .stockcardshort
+    {
+        width: 100%;
+    }
+
+  
+    .batched{
+
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='black' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='black' stroke-width='1'/></svg>");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: 100% 100%, auto;
+        border: solid red 2px;
+        
+        }
+}

@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="otpverify"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title-holder ion-text-center">
+    <h2>Setup Face ID</h2>
+    <p class="p3 ion-text-wrap">
+      You can use face authentication
+      to login into Tradebase
+    </p>
+  </div>
+
+  <div class="img-holder ion-text-center">
+    <img src="assets/imgs/faceid.gif" alt="">
+
+  </div>
+
+
+  <div class="bottom-holder ion-text-center ion-padding">
+    <div class="btns-holder ">
+      <ion-button class="big-btn" (click)="goFingerPrint()" expand="block">
+        <div class="liquid">
+        
+        </div> 
+        Continue
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

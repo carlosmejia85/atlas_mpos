@@ -1,0 +1,66 @@
+ion-toolbar
+{
+    --background: transparent;
+    position: absolute;
+}
+ion-content
+{
+    --background: #F3FBED;
+    --padding-top:65px;
+    
+    .content-holder
+    {
+        .img-holder
+        {
+            img
+            {
+                height: 10vh;
+            }
+        }
+
+        h4
+        {
+            color: #121826;
+            font-family: 'Bold';
+            margin: 10px 0 0 0;
+        }
+
+        h6
+        {
+            color: #121826;
+            font-family: 'Bold';
+            margin: 10px 0 0 0;
+        }
+    }
+    .input-holder
+    {
+    
+        h1
+        {
+            font-size: 30px;
+           
+        }
+        ion-input
+        {
+            font-family: 'Bold';
+            font-size: 30px;
+        }
+    }
+
+
+    .btns-holder
+    {
+        ion-button
+        {
+            --background: #4365c4;
+            --color: #ffffff;
+            font-family: 'Bold';
+        }
+    }
+
+    .btn-holder
+    {
+        margin-top: 20px;
+    }
+}
+

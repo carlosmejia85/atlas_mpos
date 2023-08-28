@@ -1,0 +1,125 @@
+<ion-header class="ion-no-border">
+  
+  <ion-toolbar mode="md">
+    <!-- 
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" ></ion-back-button>
+    </ion-buttons>
+    -->
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content class="ion-padding ion-full-height ion-flex ion-flex-center" >
+  
+  <div class="title-holder">
+    <h2>{{ 'SignIn.Title1' | translate }}</h2>
+    <p class="p3">{{ 'SignIn.Title2' | translate }}</p>
+  </div>
+
+  <div class="logo-container">
+    <ion-row justify-content-center align-items-center >
+      <ion-col >
+        <div text-center >
+          <img src="./assets/titan_mpos_750_248.png">
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <h1 class="logo-placeholder"></h1>
+    <p> {{ 'SignIn.SigninMessage' | translate }}</p>
+  </div>
+
+
+  <form [formGroup]="signin_form">
+
+
+  <div class="the-form">
+
+    <ion-list class="" lines="none">
+
+  
+      <div class="input-holder">
+        <ion-label>{{ 'SignIn.EmailAddress' | translate }}</ion-label>
+        <div class="input-item">
+          <ion-item lines="none">
+          
+            <ion-input [(ngModel)]="email" placeholder="example@domain.com" (ionInput)="onEmailChange($event)"  ></ion-input>
+        
+          </ion-item>
+
+          <ion-text *ngIf="emailError==true" color="danger">
+            <small class="error-message-form">{{ 'TransactionView.EmailAddressNotValid' | translate }}</small>
+           </ion-text>
+
+        </div>
+      </div>
+
+      <div class="input-holder">
+        <ion-label>{{ 'SignIn.Password' | translate }}</ion-label>
+        <div class="input-item">
+          <ion-item lines="none">
+          
+            <ion-input [(ngModel)]="password"  [type]="ptype" placeholder="****"></ion-input>
+            <ion-button class="visible-btn" fill="clear" (click)="changeType()" slot="end">
+              <ion-icon slot="icon-only" name="eye-outline" *ngIf="ptype!='password'"></ion-icon>
+              <ion-icon slot="icon-only" name="eye-off-outline" *ngIf="ptype=='password'"></ion-icon>
+            </ion-button>
+          </ion-item>
+         
+          <!-- 
+          <ion-item >
+            <ion-checkbox [(ngModel)]="rememberMe" slot="start"></ion-checkbox>
+            <ion-label> {{ 'SignIn.RememberMe' | translate}}   </ion-label>
+          </ion-item> 
+          -->
+        </div>
+      </div>
+  
+    </ion-list>
+
+    <div class="bottom-holder2" >
+      <ion-item lines="none">
+      <ion-checkbox [(ngModel)]="rememberMe" slot="start"></ion-checkbox>
+      <ion-label> {{ 'SignIn.RememberMe' | translate}}   </ion-label>
+    </ion-item>
+    </div>
+
+     <div *ngIf="biometricAvailable==true" class="img-holder ion-text-center" (click)="verifyBiometric()"> 
+     
+      <img style="width: 70px; height: 70px;" src="assets/imgs/fingerprint_scan.png" alt="">
+      <!--
+        <p>
+        {{ 'SignIn.FingerPrint' | translate }}
+      </p> 
+    -->
+    </div>
+
+ 
+
+    <div class="forgot-holder ion-activatable ripple-parent on-margin-top">
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+      <p class="ion-text-wrap" (click)="goResetPassword()">
+        {{ 'SignIn.ForgotPassword' | translate }}
+      </p>
+    </div>
+    
+  </div>
+
+  <div class="bottom-holder ion-text-center ion-padding ">
+    <div class="btns-holder ">
+      <ion-button  *ngIf="biometricAvailable==false" class="ion-margin-top" style="color: white;" class="big-btn margin-top" (click)="signIn(email, password)" expand="block" >
+        {{ 'SignIn.Buttons.SignIn' | translate }}
+      </ion-button>
+
+      <ion-button  *ngIf="biometricAvailable==true" class="ion-margin-top" style="color: white;" class="big-btn margin-top" (click)="verifyBiometric()" expand="block" >
+        {{ 'SignIn.Buttons.SignIn' | translate }}
+      </ion-button>
+
+    </div>
+    <p class="ion-text-wrap p3"> {{ 'SignIn.NoAccount' | translate }} <span routerLink="/signup">{{ 'SignIn.SignUp' | translate }}</span></p>
+  </div>
+
+</form>
+
+</ion-content>

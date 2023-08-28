@@ -1,0 +1,55 @@
+<div style="background-color:rgb(35, 81, 168); color: white " class="card">
+    <div class="top-title">
+        <h6 style="color: white;" class="h7">{{cardTitle}}</h6>
+    </div>
+
+    <div class="balance-holder flex al-center">
+        <h2 style="color: white;">${{mainAmount}}  </h2>
+       
+        <!--
+        <ion-badge  mode="ios" class="flex al-center jc-center">
+            <ion-icon  name="caret-up"></ion-icon>
+            0%
+        </ion-badge>
+        -->
+    </div>
+
+    <div class="sm-balance-holder">
+        <h6 style="color:white">${{subAmount}}</h6>
+    </div>
+
+    <div class="market-status-holder" *ngIf="showStatus">
+        <ion-row>
+            <ion-col size="4">
+                <div class="status flex al-center jc-center">
+                    <div class="dot" id="green">
+
+                    </div>
+                    <h6 class="h7">
+                        {{saleTitle}}: {{salePercentage}}%
+                    </h6>
+                </div>
+            </ion-col>
+            <ion-col size="4">
+                <div class="status flex al-center jc-center">
+                    <div class="dot" id="yellow">
+
+                    </div>
+                    <h6 class="h7">
+                        {{voidTitle}}: {{voidPercentage}}%
+                    </h6>
+                </div>
+            </ion-col>
+            <ion-col size="4">
+                <div class="status flex al-center jc-center">
+                    <div class="dot" id="gray">
+
+                    </div>
+                    <h6 class="h7">
+                        {{revTitle}}: 0%
+                    </h6>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.topic-card
+{
+    border-radius: 16px;
+    padding: 30px 10px;
+    width: 100%;
+
+    img
+    {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    h6
+    {
+        color: #6C727F;
+        margin: 0;
+    }
+
+    h2
+    {
+        color: #121826;
+        font-family: 'Bold';
+        font-size: 14px;
+        margin: 5px 0 5px 0;
+    }
+}

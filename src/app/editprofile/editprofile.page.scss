@@ -1,0 +1,44 @@
+ion-content
+{
+    .profile-img-holder 
+    {
+        position: relative;
+        ion-avatar
+        {
+            background: #b7fde5;
+            margin: 0 auto;
+            height: 7rem;
+            width: 7rem;
+        }
+        .btn
+        {
+            background: var(--ion-color-primary);
+            border-radius: 50%;
+            border: 5px solid white;
+           bottom: 0;
+           height: 45px;
+           left: 80px;
+           right: 0;
+           margin: 0 auto;
+           width: 45px;
+           position: absolute;
+           z-index: 110;
+        }
+    }
+
+    .border
+    {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .the-form
+    {
+        margin-top: 5vh;
+    }
+
+    .btn-holder
+    {
+        margin-top: 2vh;
+    }
+}

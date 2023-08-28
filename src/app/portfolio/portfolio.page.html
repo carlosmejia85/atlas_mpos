@@ -1,0 +1,99 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    
+    <ion-title>{{ 'Portafolio.Title' | translate }}</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+  <div class="today-summary">
+    <ion-row>
+      <ion-col size="6">
+        <ion-item lines="none">
+          <div class="thumb" slot="start">
+            <img src="assets/imgs/loss.svg" alt="">
+          </div>
+          <ion-label>
+            <h6 class="h7">{{ 'Portafolio.Void' | translate }}</h6>
+            <h4>$ {{voidAmount}}</h4>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item lines="none">
+          <div class="thumb" slot="start">
+            <img src="assets/imgs/gain.svg" alt="">
+          </div>
+          <ion-label>
+            <h6 class="h7">{{ 'Portafolio.Sale' | translate }}</h6>
+            <h4>${{saleAmount}}</h4>
+
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <balancecard cardTitle="{{ 'Portafolio.BatchTotal' | translate }}" mainAmount="{{saleAmount}}" subAmount="{{voidAmount}}"></balancecard>
+
+  
+  <div class="bottom-holder ion-text-center ion-padding">
+    <div class="btns-holder ">
+      
+      <ion-button  style="color: white" class="big-btn" (click)="askSettlement()" expand="block">
+        {{'Tabs.Settlement' | translate }}  
+       <div class="liquid" *ngIf="!isAllfilled">
+        
+      </div> 
+      </ion-button>
+    </div>
+   
+  </div>
+
+  <div class="chart-holder" *ngIf="ShowCharts">
+    <apx-chart [dataLabels]="chartOptions.dataLabels" [series]="chartOptions.series" [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis" [yaxis]="chartOptions.yaxis" [title]="chartOptions.title"
+      [stroke]="chartOptions.stroke" [plotOptions]="chartOptions.plotOptions" [colors]="chartOptions.colors"
+      [states]="chartOptions.states"></apx-chart>
+    <div class="seg-holder">
+      <ion-segment [value]="timerange" (ionChange)="changeChart($event)">
+        <ion-segment-button value="12H">
+          <ion-label>12H</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1D">
+          <ion-label>1D</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1W">
+          <ion-label>{{'Portafolio.OneWeek' | translate }}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1M">
+          <ion-label>{{ 'Portafolio.OneMonth' | translate }}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1Y">
+          <ion-label>{{ 'Portafolio.OneYear' | translate }}</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+  </div>
+
+  <!--
+  <div class="section">
+    <div class="section-title flex al-center jc-between" style="margin-bottom: 30px">
+      <h4>Top Stocks</h4>
+      <h6>View all</h6>
+    </div>
+
+    <div *ngIf="ShowCharts">
+      <chartcard (click)="goDetails()" imgPath="assets/imgs/twitter.svg"  comShortName="TWTR" comName="Twitter Inc" [mainAmount]="'63.98'" [precentAmount]="'0.23'" [data]="[10, 41, 35, 51, 49, 62, 69, 91, 148]" isup="down"></chartcard>
+  
+      <chartcard imgPath="assets/imgs/google.svg"  comShortName="GOOGL" comName="Google Inc" [mainAmount]="'200.84'" [precentAmount]="'0.58'" [data]="[5, 30, 25, 39, 30, 52, 49, 80, 120]" isup="up"></chartcard>
+     
+    </div>
+  </div>
+-->
+</ion-content>

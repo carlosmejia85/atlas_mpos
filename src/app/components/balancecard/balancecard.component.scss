@@ -1,0 +1,91 @@
+.card
+{
+    background: var(--ion-color-primary);
+    border-radius: 24px;
+    padding: 20px 16px;
+    .top-title
+    {
+        h6
+        {
+            color: #1B7A00;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .balance-holder
+    {
+        h2
+        {
+            color: #1B7A00;
+            margin: 0 0 0 0;
+            span
+            {
+                font-size: 16px;
+                opacity: 0.7;
+            }
+        }
+
+        ion-badge
+        {
+            background: var(--ion-color-light);
+            margin-left: 10px;
+            font-size: 12px;
+            ion-icon
+            {
+                color:var(--ion-color-primary);
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .sm-balance-holder
+    {
+        margin: 10px 0 0 0;
+        h6
+        {
+            color: #1B7A00;
+            margin: 0 0 0 0;
+        }
+    }
+
+    .market-status-holder
+    {
+        background: var(--ion-color-light);
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 5px 0;
+
+        #green
+        {
+            background: var(--ion-color-primary);
+        }
+
+        #yellow
+        {
+            background: #FFC07A;
+        }
+
+        #gray
+        {
+            background: #928FFF;
+        }
+
+        .status
+        {
+            .dot
+            {
+                border-radius: 50%;
+                height: 16px;
+                width: 16px;
+            }
+
+            h6
+            {
+                color: #121826;
+                line-height: 16px;
+                margin: 0 0 0 10px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Stock Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+  <div class="top-holder">
+    <ion-item lines="none">
+      <div class="thumb flex al-center jc-center" slot="start">
+        <img src="assets/imgs/twitter.svg" alt="">
+      </div>
+      <ion-label>TWTR <span>&nbsp; twitter</span> </ion-label>
+      <ion-badge [ngClass]="{'up': isup === 'up','down': isup === 'down'}" mode="ios" class="flex al-center jc-center">
+        <ion-icon name="caret-up" *ngIf="isup == 'up'"></ion-icon>
+        <ion-icon name="caret-down" *ngIf="isup == 'down'"></ion-icon>
+        0.90%
+      </ion-badge>
+    </ion-item>
+  </div>
+
+  <div class="chart-holder" *ngIf="ShowCharts">
+    <div class="seg-holder">
+      <ion-segment mode="md" [value]="timerange" (ionChange)="changeChart($event)">
+        <ion-segment-button value="12H">
+          <ion-label>12H</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1D">
+          <ion-label>1D</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1W">
+          <ion-label>1W</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1M">
+          <ion-label>1M</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="1Y">
+          <ion-label>1Y</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    <apx-chart [dataLabels]="chartOptions.dataLabels" [series]="chartOptions.series" [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis" [yaxis]="chartOptions.yaxis" [title]="chartOptions.title"
+      [stroke]="chartOptions.stroke" [plotOptions]="chartOptions.plotOptions" [colors]="chartOptions.colors"
+      [states]="chartOptions.states"></apx-chart>
+   
+  </div>
+
+  <div class="statistics ion-padding">
+    <ion-row>
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>Open</h6>
+        <h3>224.54</h3>
+        </div>
+      </ion-col>
+
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>High</h6>
+        <h3>250.25</h3>
+        </div>
+      </ion-col>
+
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>Low</h6>
+        <h3>224.05</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>Volume</h6>
+        <h3>224.54</h3>
+        </div>
+      </ion-col>
+
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>Avg. Volume</h6>
+        <h3>250.25</h3>
+        </div>
+      </ion-col>
+
+      <ion-col size="4" class="flex al-center jc-center">
+        <div class="ion-text-center">
+          <h6>Market Cap</h6>
+        <h3>224.05</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border" >
+  <ion-toolbar mode="md">
+    <ion-row>
+      <ion-col size="6">
+        <ion-button  expand="block" >
+          Buy
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button  id="sell" expand="block" >
+          Sell
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

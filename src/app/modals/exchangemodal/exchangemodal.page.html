@@ -1,0 +1,124 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-title class="ion-text-center">Manage Stocks</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="start" name="close"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="seg-holder">
+    <ion-segment [value]="Category" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="exchange">
+        <ion-label>Exchange</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="buy">
+        <ion-label>Buy</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="sell">
+        <ion-label>Sell</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div class="exchange" *ngIf="Category == 'exchange' ">
+    <div class="wrapper">
+      <div class="first-holder  holders ion-padding">
+  
+  
+        <div class="from">
+          <div *ngFor="let data of currencies">
+            <ng-container *ngIf="data.value == fromCurrency">
+              <div class="top-holder flex al-center">
+                <h4>{{data.name}}</h4> <span>({{data.fullname}})</span>
+              </div>
+              <ion-item lines="none" >
+                <div class="thumb flex al-center jc-center" slot="start" (click)="presentModal()">
+                  <img [src]="data.icon" alt="">
+                </div>
+                <div class="selected fromcurrency flex al-center" slot="start">
+                  <ion-icon name="caret-down"></ion-icon>
+                </div>
+                <h3 slot="start" class="sign">
+                  $
+                </h3>
+                <ion-input [value]="data.amount"></ion-input>
+                
+              </ion-item>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+  
+      <div class="btn ripple-parent ion-activatable flex al-center jc-center " [ngClass]="isConverted">
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        <ion-icon src="assets/imgs/refersh.svg"></ion-icon>
+      </div>
+  
+      <div class="second-holder holders ion-padding flex al-end ">
+        <div class="to">
+          <div *ngFor="let data of currencies">
+            <ng-container *ngIf="data.value == toCurrency">
+              <div class="top-holder flex al-center">
+                <h4>{{data.name}}</h4> <span>({{data.fullname}})</span>
+              </div>
+              <ion-item lines="none" >
+                <div class="thumb flex al-center jc-center" slot="start" (click)="presentModal()">
+                  <img [src]="data.icon" alt="">
+                </div>
+                <div class="selected fromcurrency flex al-center" slot="start">
+                  <ion-icon name="caret-down"></ion-icon>
+                </div>
+                <h3 slot="start" class="sign">
+                  $
+                </h3>
+                <ion-input value="97749.84"></ion-input>
+              </ion-item>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-holder">
+      <ion-button class="big-btn" (click)="convert()" expand="block">
+        Continue
+        <div class="liquid">
+  
+        </div>
+      </ion-button>
+    </div>
+  </div>
+
+  <div class="buy" *ngIf="Category == 'buy'">
+    <div class="section">
+      <div class="section-title flex al-center jc-between" style="margin-bottom: 30px">
+        <h4>Select Stocks</h4>
+      </div>
+  
+      <div *ngIf="ShowCharts">
+        <chartcard *ngFor="let stock of currenciesList" (click)="goBuy(stock)"
+        #position
+        [imgPath]="stock.icon" [comShortName]="stock.name" [comName]="stock.fullname" [mainAmount]="stock.amount" [precentAmount]="'0.23'" [data]="[10, 41, 35, 51, 49, 62, 69, 91, 148]" [isup]="stock.status"></chartcard>       
+      </div>
+    </div>
+  </div>
+
+  <div class="sell" *ngIf="Category == 'sell'">
+    <div class="section">
+      <div class="section-title flex al-center jc-between" style="margin-bottom: 30px">
+        <h4>Select Stocks</h4>
+      </div>
+  
+      <div *ngIf="ShowCharts">
+        <chartcard *ngFor="let stock of currenciesList"
+        
+        [imgPath]="stock.icon" [comShortName]="stock.name" [comName]="stock.fullname" [mainAmount]="stock.amount" [precentAmount]="'0.23'" [data]="[10, 41, 35, 51, 49, 62, 69, 91, 148]" [isup]="stock.status"></chartcard>       
+      </div>
+    </div>
+  </div>
+
+</ion-content>

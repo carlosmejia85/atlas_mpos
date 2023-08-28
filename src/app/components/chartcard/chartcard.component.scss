@@ -1,0 +1,63 @@
+.chart-card
+{
+    margin-top: -30px;
+    .img-holder
+    {
+        img
+        {
+            height: 40px;
+        }
+    }
+
+    h4
+    {
+        color: #121826;
+        margin: 0;
+    }
+
+    h6
+    {
+        color: #121826;
+        opacity: 0.7;
+        margin: 0;
+    }
+
+    h2
+    {
+        color: #121826;
+        font-size: 18px;
+        margin: 0;
+
+        span
+        {
+            opacity: 0.5;
+        }
+    }
+
+    ion-badge
+    {
+        background: transparent;
+    }
+}
+
+.up
+{
+    background: var(--ion-color-primary);
+    color: #1B7A00;
+
+    ion-icon
+    {
+        color: #1B7A00;
+    }
+}
+
+.down
+{
+    color:  #932205;
+   
+
+    ion-icon
+    {
+        color: #FF6740 !important;
+    }
+}

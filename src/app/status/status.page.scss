@@ -1,0 +1,69 @@
+ion-content
+{
+    .seg-holderr
+    {
+        ion-segment
+        {
+            background: #b3d8f6;
+            border-radius: 16px;
+            padding: 10px 5px ;
+            ion-segment-button
+            {
+                --border-radius: 8px;
+                --color-checked:#000000;
+                font-family: 'Bold';
+                font-size: 14px;
+            }
+        }
+    }
+
+    .seg-content
+    {
+        margin-top: 4vh;
+
+        .orders
+        {
+            .holder
+            {
+                .img-holder
+                {
+                    img
+                    {
+                        height: 20vh;
+                    }
+                }
+        
+                h2
+                {
+                    color:  #121826;
+                    font-family: 'Bold';
+                }
+        
+                h6
+                {
+                    color:  #6C727F;
+                    font-family: 'Regular';
+                    line-height: 24px;
+        
+                }
+            }
+        
+            .btn-holder
+            {
+        
+                margin-top: 8vh;
+            }
+        }
+    }
+
+    .section
+    {
+        .section-title 
+        {
+            h4
+            {
+                margin-top: 0;
+            }
+        }
+    }
+}

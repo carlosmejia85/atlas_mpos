@@ -1,0 +1,107 @@
+<ion-header collapse="fade" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--<ion-back-button defaultHref="tabs/tab1" icon="chevron-back"></ion-back-button>-->
+   <ion-button (click)="goToHome()" >
+     <ion-icon slot="start" name="chevron-back" defaultHref="tabs/tab1"></ion-icon>
+   </ion-button> 
+ </ion-buttons>
+
+    <ion-title>
+      {{ 'Devices.Title' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <div class="ion-padding">
+
+
+    <div class="seg-holderr">
+      <ion-segment [value]="Categories" (ionChange)="segmentChanged($event)">
+        
+        <ion-segment-button value="registered">
+          <ion-label>{{ 'Devices.RegisteredDevices'  | translate }}</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="new">
+          <ion-label>{{ 'Devices.NewDevices' | translate }}</ion-label>
+        </ion-segment-button>
+
+      </ion-segment>
+    </div>
+
+    <div class="seg-content">
+  
+      <div class="history" *ngIf="Categories == 'registered'">
+        <div class="section">
+      
+          <ion-list-header class="ion-list-header-small">
+            <ion-label *ngIf="isFinding == false">{{ 'Devices.RegisteredDevices' | translate }}  ({{ paired_devices.length }})</ion-label>
+
+            <ion-label *ngIf="isFinding == true">{{ 'Devices.RegisteredDevices' | translate }}  ( <ion-spinner *ngIf="isFinding == true"></ion-spinner> )</ion-label>
+            
+          </ion-list-header>
+
+          <ion-list class="list-custom" lines="full" *ngIf="paired_devices.length > 0">
+            
+            <ion-item detail="false" *ngFor="let device of paired_devices; let i=index;" (click)="SetSelectedDevice2( device )" >
+                <ion-icon slot="start" color="medium" name="phone-portrait"></ion-icon>
+                <ion-label>
+                  <h3> {{ device.split("|")[0] }} </h3>
+                  <p class="font-size-smallest"> {{ device.split("|")[1] }} </p>
+                </ion-label>
+
+                <ion-badge color="primary" style="color: white;" mode="ios" slot="end" *ngIf="FindSelectedDevice (device) == true" >{{ 'Devices.Selected' | translate }}</ion-badge>
+
+            </ion-item>
+
+          </ion-list>
+       </div>
+      </div>
+      <div class="history" *ngIf="Categories == 'new'">
+        <div class="section">
+
+          <ion-list-header class="ion-list-header-small">
+            <ion-label *ngIf="isScanning == false">{{ 'Devices.NewDevices' | translate }}  ({{ new_devices.length }} )</ion-label>
+            <ion-label *ngIf="isScanning == true" >{{ 'Devices.NewDevices' | translate }}  ( <ion-spinner></ion-spinner> )</ion-label>
+          </ion-list-header>
+
+          <div class="ion-text-center"  *ngIf="isScanning == false">
+            <ion-button (click)="goToScan()" >
+              <ion-label style="color: white;"> {{ 'Devices.Scan' | translate }} </ion-label>
+            </ion-button> 
+          </div>
+
+          <!-- 
+          <div class="ion-text-center">
+          <ion-item class="ion-item-transparent ion-text-center" lines="none" button detail="false" *ngIf="isScanning == true">
+            <ion-spinner></ion-spinner>
+          </ion-item>
+         </div>
+          -->
+
+        
+          <ion-list class="list-custom" lines="full" *ngIf="new_devices.length > 0">
+            
+            <ion-item detail="false" *ngFor="let device of new_devices; let i=index;" (click)="SetSelectedDevice( device )" >
+                <ion-icon slot="start" color="medium" name="phone-portrait"></ion-icon>
+                <ion-label>
+                  <h3> {{ device.split("|")[0] }} </h3>
+                  <p class="font-size-smallest"> {{ device.split("|")[1] }} </p>
+                </ion-label>
+            </ion-item>
+
+          </ion-list>
+
+        </div>
+      </div>
+    </div>
+    <p class="list-description"></p>
+
+  </div>
+
+</ion-content>

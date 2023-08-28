@@ -1,0 +1,167 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" icon="chevron-back" defaultHref="signin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+ 
+  
+  <div class="section1" *ngIf="showSection1">
+     <!-- 
+    <div class="seg-holder">
+      <ion-segment [value]="Categories" (ionChange)="segmentChanged($event)">
+       
+          <ion-segment-button value="phone">
+          <ion-label>Phone Number</ion-label>
+        </ion-segment-button> 
+        <ion-segment-button value="email">
+          <ion-label>Email</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    <div class="phone-section" *ngIf="Categories == 'phone' ">
+      <div class="title-holder">
+        <h2>Password Recovery</h2>
+        <p class="p3 ion-text-wrap">
+          Enter your Phone number to recover your password
+        </p>
+      </div>
+
+      <div class="the-form">
+        <div class="input-holder">
+          <ion-label >Phone Number</ion-label>
+          <div class="input-item">
+            <ion-item lines="none">
+              
+              <ion-input placeholder="+84 999 999 999"></ion-input>
+            </ion-item>
+          </div>
+        </div>
+       
+
+
+
+      </div>
+    </div>
+  -->
+
+    <div class="email-section" *ngIf="Categories == 'email' ">
+      <div class="title-holder">
+        <h2> {{ 'PasswordRecovery.Title' | translate}} </h2>
+        <p class="p3 ion-text-wrap">
+          {{ 'PasswordRecovery.Title2' | translate}}
+        </p>
+      </div>
+
+      <div class="the-form">
+        <div class="input-holder">
+          <ion-label>{{ 'PasswordRecovery.EmailAddress' | translate}}</ion-label>
+          <div class="input-item">
+            <ion-item lines="none">
+              <ion-input placeholder="example@domain.com" [(ngModel)]="Email" (ionInput)='onEmailChange($event)'></ion-input>
+
+              <ion-text *ngIf="emailError==true" color="danger">
+                <small class="error-message-form">{{ 'TransactionView.EmailAddressNotValid' | translate }}</small>
+               </ion-text>
+
+            </ion-item>
+          </div>
+        </div>
+
+        <!--        
+        <div class="border ion-text-center">
+          <img src="assets/imgs/border.svg" alt="">
+        </div>
+
+        <div class="input-holder">
+          <ion-label >{{ 'SignUp.Password' | translate}}</ion-label>
+          <div class="input-item">
+            <ion-item lines="none">
+             
+              <ion-input [type]="ptype" placeholder="****" [(ngModel)]="Password"></ion-input>
+              <ion-button class="visible-btn" fill="clear" (click)="changeType()" slot="end">
+                <ion-icon slot="icon-only" name="eye-outline" *ngIf="ptype!='password'"></ion-icon>
+                <ion-icon slot="icon-only" name="eye-off-outline" *ngIf="ptype=='password'"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+        </div>
+    
+        <div class="input-holder">
+          <ion-label >{{ 'SignUp.ConfirmPassword' | translate}}</ion-label>
+          <div class="input-item">
+            <ion-item lines="none">
+             
+              <ion-input [type]="ptype" placeholder="****" [(ngModel)]="ConfirmPassword"></ion-input>
+              <ion-button class="visible-btn" fill="clear" (click)="changeType()" slot="end">
+                <ion-icon slot="icon-only" name="eye-outline" *ngIf="ptype!='password'"></ion-icon>
+                <ion-icon slot="icon-only" name="eye-off-outline" *ngIf="ptype=='password'"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+        </div>
+-->
+      </div>
+    </div>
+
+
+    <div class="bottom-holder ion-text-center ion-padding">
+      <div class="btns-holder ">
+        <ion-button class="big-btn" expand="block" (click)="resetPassword()">
+          <ion-label style="color: white;">Continue</ion-label>
+        </ion-button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section2" *ngIf="showSection2">
+    <div class="title-holder">
+      <h2>Verification</h2>
+      <p class="p3 ion-text-wrap">
+        Enter 4-digit code we just texted to your phone number, <span> +84 999 999 999</span>
+      </p>
+    </div>
+    <div class="otp-holder">
+      <ion-grid fixed>
+        <ion-row class="ion-align-items-center ion-justify-content-center">
+          <ion-col size="3">
+            <div class="input-holder" [ngClass]="inputBg1">
+              <ion-input type="tel" #otp1 [(ngModel)]="otp11"  class="otp ion-text-center" maxlength="1" (keyup)="next(otp2)" ></ion-input>
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="input-holder" [ngClass]="inputBg2">
+              <ion-input type="tel" #otp2  [(ngModel)]="otp22" class="otp ion-text-center" maxlength="1" (keyup)="next(otp3)" ></ion-input>
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="input-holder" [ngClass]="inputBg3">
+              <ion-input type="tel" #otp3  [(ngModel)]="otp33" class="otp ion-text-center" maxlength="1" (keyup)="next(otp4)" ></ion-input>
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="input-holder" [ngClass]="inputBg4">
+              <ion-input type="tel" #otp4 [(ngModel)]="otp44" class="otp ion-text-center" maxlength="1" (keyup)="next(otp4)"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  
+    <div class="bottom-holder ion-text-center ion-padding">
+      <div class="btns-holder ">
+        
+  
+        <ion-button  [disabled]="isAllfilled" class="big-btn" (click)="showSuccessModal()" expand="block">
+         <ion-label style="color: white;">Continue</ion-label>
+        </ion-button>
+      </div>
+     
+    </div>
+  </div>
+
+</ion-content>

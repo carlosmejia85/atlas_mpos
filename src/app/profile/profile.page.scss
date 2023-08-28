@@ -1,0 +1,155 @@
+ion-toolbar
+{
+    ion-buttons
+    {
+        ion-button
+        {
+            font-family: 'Bold';
+            font-size: 16px;
+            color: #1B7A00;
+        }
+    }
+}
+ion-content
+{
+    .profile-item
+    {
+        ion-item
+        {
+            .avatar
+            {
+                background: #124d96;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+
+                img
+                {
+                    height: 50px;
+                }
+            }
+
+            ion-label
+            {
+                h4
+                {
+                    font-family: 'Bold' !important;
+                    font-size: 18px !important;
+                }
+
+                h6
+                {
+                    color: #6C727F;
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+
+    .ref-holder
+    {
+        background: #F1FFFA;
+        border-radius: 16px;
+        margin-top: 20px;
+        padding: 5px 0;
+        ion-item
+        {
+            --background: transparent;
+            .thumb
+            {
+                img
+                {
+                    height: 30px;
+                }
+            }
+
+            ion-label
+            {
+                h3
+                {
+                    color: #1B7A00;
+                    font-family: 'Bold';
+                    font-size: 14px;
+                }
+
+                h6
+                {
+                    color: #1B7A;
+                    font-family: 'Medium';
+                }
+            }
+        }
+    }
+
+    .border
+    {
+        border: 1px dashed #124d96;
+        height: 1px;
+        margin: 10px 0;
+    }
+
+    .item-list
+    {
+        ion-item
+        {
+            margin-bottom: 10px;
+            .start-slot
+            {
+                background: #dfe0e4;
+                border-radius: 12px;
+                height: 32px;
+                width: 32px;
+
+                img
+                {
+                    height: 24px;
+                }
+            }
+
+            ion-label
+            {
+                color: #121826;
+                font-family: 'Bold';
+                font-size: 14px;
+            }
+
+            h4
+            {
+                color: #6C727F;
+                font-family: 'Bold';
+                font-size: 14px;
+            }
+        }
+    }
+
+    .feed-holder
+    {
+        background: #124d96;
+        border-radius: 16px;
+        margin-top: 20px;
+        padding: 5px 0;
+        ion-item
+        {
+            --background: transparent;
+            .thumb
+            {
+                background: #E1FFF5;
+                border-radius: 16px;
+                height: 48px;
+                width: 48px;
+                img
+                {
+                    height: 30px;
+                }
+            }
+
+            ion-label
+            {
+                color: #FFFFFF;
+                    font-family: 'Medium';
+                    font-size: 12px;
+            }
+        }
+    }
+}

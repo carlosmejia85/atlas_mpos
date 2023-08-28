@@ -1,0 +1,117 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{ 'Profile.Title' | translate }}</ion-title>
+    <ion-buttons slot="end">
+
+  
+    <!-- 
+      <ion-button (click)="goEditProfile()" fill="clear">
+        <ion-label style="color: black">Edit Profile</ion-label>
+      </ion-button>
+    -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-item">
+    <ion-item lines="none"> 
+     <div class="avatar flex al-center jc-center" slot="start">
+      <img src="assets/imgs/user_avatar.png" alt="">
+     </div>
+     
+      <ion-label>
+        <h4> {{Username}} </h4>
+      </ion-label>
+    </ion-item>
+  </div>
+  <!--
+  <div class="ref-holder" (click)="goReferral()">
+    <ion-item lines="none">
+      <div slot="start" class="thumb flex al-center jc-center">
+        <img src="assets/imgs/icnref.svg" alt="">
+      </div>
+      <ion-label>
+        <h3>Referral Code</h3>
+        <h6 class="h7">
+          Share your friend get $20 of free stocks
+        </h6>
+      </ion-label>
+    </ion-item>
+  </div>
+  -->
+  <div class="border ion-text-center">
+    <img src="assets/imgs/border.svg" alt="">
+  </div>
+
+  <div class="item-list">
+    <ion-item lines="none" detail (click)="goTerminalSettting()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p1.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.TerminalConfiguration' | translate }} </ion-label>
+    </ion-item>
+
+    <ion-item lines="none" detail (click)="goDevicesSetting()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <ion-icon slot="start" color="blue" name="phone-portrait"></ion-icon>
+      </div>
+      <ion-label>{{ 'Devices.Title' | translate }} </ion-label>
+    </ion-item>
+    
+    <ion-item lines="none" detail (click)="downloadFile()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="/svg/arrow-down-circle.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.EmvConfiguration' | translate }}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" (click)="changeLanguage()" detail>
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p2.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.Language' | translate }}</ion-label>
+      <h4 slot="end">{{selectedLanguage}}</h4> 
+    </ion-item>
+
+    <ion-item lines="none" detail (click)="goSettings()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p3.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.Settings' | translate }}</ion-label>
+    </ion-item>
+
+    <!-- 
+    <ion-item lines="none" detail (click)="goFAQ()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/p4.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.FAQ' | translate }}</ion-label>
+    </ion-item>
+-->
+    <ion-item lines="none" (click)="goLogOut()">
+      <div class="start-slot flex al-center jc-center" slot="start">
+        <img src="assets/imgs/logout.svg" alt="">
+      </div>
+      <ion-label>{{ 'Profile.Logout' | translate }} </ion-label>
+    </ion-item>
+
+    
+  </div>
+
+  <div class="feed-holder">
+    <ion-item lines="none" detail>
+      <div slot="start" class="thumb flex al-center jc-center">
+        <img src="assets/imgs/icnheadset.svg" alt="">
+      </div>
+      <ion-label class="ion-text-wrap">
+        {{ 'Profile.Title2' | translate }}
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" icon="chevron-back" defaultHref="signin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="title-holder">
+
+  
+    <h2>{{'OTPVerify.EnterAuthenticationCode' | translate }}</h2>
+    <p class="p3 ion-text-wrap">
+      {{'OTPVerify.Enter4DigitCode' | translate }} 
+    </p>
+  </div>
+  <div class="otp-holder">
+    <ion-grid fixed>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="3">
+          <div class="input-holder" [ngClass]="inputBg1">
+            <ion-input type="tel" #otp1 [(ngModel)]="otp11"  class="otp ion-text-center" maxlength="1" (keyup)="next(otp2)" ></ion-input>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="input-holder" [ngClass]="inputBg2">
+            <ion-input type="tel" #otp2  [(ngModel)]="otp22" class="otp ion-text-center" maxlength="1" (keyup)="next(otp3)" ></ion-input>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="input-holder" [ngClass]="inputBg3">
+            <ion-input type="tel" #otp3  [(ngModel)]="otp33" class="otp ion-text-center" maxlength="1" (keyup)="next(otp4)" ></ion-input>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="input-holder" [ngClass]="inputBg4">
+            <ion-input type="tel" #otp4 [(ngModel)]="otp44" class="otp ion-text-center" maxlength="1" (keyup)="next(otp4)"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- 
+  <div>
+    <ion-button class="big-btn" id="resend" expand="block">
+      {{'OTPVerify.ResendCode' | translate }}  
+     </ion-button>
+  </div>
+-->
+
+  <div class="bottom-holder ion-text-center ion-padding">
+    <div class="btns-holder ">
+      
+
+      <ion-button  style="color: white" class="big-btn" (click)="goToConfirmOTP()" expand="block">
+        {{'OTPVerify.Continue' | translate }}  
+       <div class="liquid" *ngIf="!isAllfilled">
+        
+      </div> 
+      </ion-button>
+    </div>
+   
+  </div>
+</ion-content>

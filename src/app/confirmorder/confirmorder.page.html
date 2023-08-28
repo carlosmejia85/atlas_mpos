@@ -1,0 +1,137 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+
+    <!--
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="buystock" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+  -->
+  <ion-buttons slot="start">
+    <ion-button (click)="goToHome()" >
+      <ion-icon slot="start" name="chevron-back"></ion-icon>
+    </ion-button> 
+  </ion-buttons>
+
+    <!-- <ion-title> {{ 'Confirmation.Title' | translate }}</ion-title> -->
+
+    <ion-title> {{  Title }}</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  <ion-item class="ion-item-transparent ion-text-center" lines="none" button detail="false" *ngIf="show_loading == true">
+    <ion-spinner></ion-spinner>
+  </ion-item>
+
+  <div class="holder animate__animated animate__zoomIn ion-padding ion-text-center">
+  
+    <div class="cost-holder">
+      <h6>  {{total_title}} </h6>
+      <h1>$ {{total}}</h1>
+    </div>
+
+   <!--
+   <div class="sub-title ion-padding-top">
+    <p class="p1 ion-text-left">Stock you buy</p>
+   </div>
+   
+    <div class="stock-holder ion-text-left ">
+      <ion-item lines="none" button detail="false">
+        <div class="thumb flex al-center jc-center" slot="start">
+          <img src="assets/imgs/apple.svg" alt="">
+        </div>
+        <ion-label>
+          <h4>AAPL</h4>
+          <h6 class="h7">Apple Inc.</h6>
+        </ion-label>
+        <div class="end-slot flex al-center jc-center">
+          <h6>$127.00</h6>
+        </div>
+      </ion-item>
+    </div>
+-->
+    <div class="sub-title ion-text-left ion-padding-top">
+      <p class="p1">{{ 'Confirmation.PaymentDevice' | translate }} </p>
+     </div>
+
+    <div class="paymethod-holder ion-text-left ">
+      
+      <ion-item lines="none" button detail="false">
+        <div class="thumb flex al-center jc-center" slot="start">
+          <img src="assets/imgs/dbcard.svg" alt="">
+        </div>
+        <ion-label (click)="connect_device()">
+          <h4>{{device_status}}</h4>
+          <h6 class="h7">  {{DeviceName}} </h6>
+        </ion-label>
+      
+      </ion-item>
+    </div>
+
+    <div class="payment-details-holder ion-text-left ion-padding-vertical">
+      <p class="p1">
+        {{ 'Confirmation.PaymentDetails' | translate }}
+      </p>
+      <div class="the-list">
+        <!-- 
+        <ion-item lines="none">
+          <ion-icon slot="start" src="assets/imgs/f1.svg"></ion-icon>
+          <ion-label class="p3">Funding source</ion-label>
+          <h6 slot="end" id="source">ionstock</h6>
+        </ion-item>
+        -->
+        <ion-item lines="none">
+          <ion-icon slot="start" src="assets/imgs/f4.svg"></ion-icon>
+          <ion-label class="p3">  {{ 'Transaction.BaseAmount' | translate }} </ion-label>
+          <h6 slot="end" >$ {{ base }}</h6>
+        </ion-item>
+
+        <ion-item lines="none" *ngIf="isTaxEnabled">
+          <ion-icon slot="start" src="assets/imgs/f4.svg"></ion-icon>
+          <ion-label class="p3">{{ 'Transaction.TaxAmount' | translate }}</ion-label>
+          <h6 slot="end" >$ {{ tax }}</h6>
+        </ion-item>
+        <!-- 
+        <ion-item lines="none">
+          <ion-icon slot="start" src="assets/imgs/f3.svg"></ion-icon>
+          <ion-label class="p3">Approx. Shares</ion-label>
+          <h6 slot="end" >$ </h6>
+        </ion-item>
+        -->
+        <ion-item lines="none" *ngIf="isTipEnabled">
+          <ion-icon slot="start" src="assets/imgs/f4.svg"></ion-icon>
+          <ion-label class="p3">{{ 'Transaction.TipAmount' | translate }}</ion-label>
+          <h6 slot="end" >$ {{ tip }}</h6>
+        </ion-item>
+
+        <ion-item lines="none" *ngIf="isOverCharged">
+          <ion-icon slot="start" src="assets/imgs/f4.svg"></ion-icon>
+          <ion-label class="p3">{{ 'Transaction.OverCharged' | translate }} </ion-label>
+          <h6 slot="end" >$ {{ otherAmount }}</h6>
+        </ion-item>
+
+        <ion-item lines="none" *ngIf="isInstallment">
+          <ion-icon slot="start" src="assets/imgs/f4.svg"></ion-icon>
+          <ion-label class="p3">{{ 'Transaction.Quota' | translate }}</ion-label>
+          <h6 slot="end" >$ {{ quota }}</h6>
+        </ion-item>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <div *ngIf="retry==true" class="btn-holder">
+    <ion-button (click)="  retryTrx()" expand="block" class="big-btn">
+      <ion-label style="color: white">{{ 'Confirmation.Retry' | translate }}</ion-label>
+    </ion-button>
+  </div>
+
+  <div class="btn-holder">
+    <ion-button (click)="cancel_trx()" expand="block" class="big-btn">
+      <ion-label style="color: white">{{ 'Confirmation.Cancel' | translate }}</ion-label>
+    </ion-button>
+  </div>
+</ion-content>

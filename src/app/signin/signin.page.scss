@@ -1,0 +1,72 @@
+ion-content
+{
+    .title-holder
+    {
+        h2
+        {
+            margin: 0;
+        }
+
+        p
+        {
+            color: #6C727F;
+            margin-top: 10px;
+        }
+    }
+
+    .the-form
+    {
+        margin-top: 20px;
+
+        .input-holder
+        {
+            position: relative;
+        }
+
+        ion-item
+        {
+            .visible-btn
+            {
+                color: #D3D5DA;
+            }
+        }
+
+      .forgot-holder
+      {
+          p
+          {
+              color: #314cb9;
+              font-size: 14px;
+              margin:0 0 0 10px;
+          }
+      }
+    }
+
+    .bottom-holder
+    {
+        bottom: 10px;
+        left: 0;
+        //position: absolute;
+        right: 0;
+        width: 100%;
+
+        p
+        {
+            span
+            {
+                color: var(--ion-color-primary);
+                font-family: 'Bold' !important;
+            }
+        }
+    }
+
+    .bottom-holder2
+    {
+        bottom: 10px;
+        left: 0;
+        //position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+}

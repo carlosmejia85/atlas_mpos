@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="signup"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="height: 100%">
+    <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%">
+      <div class="holder ion-text-center ion-padding">
+        <img src="assets/imgs/otpauth.svg" alt="">
+        <h2> <!-- {{ 'EmailAccount.Confirmation' | translate }} --> {{ Message2 }}</h2>
+        <p class="ion-text-wrap p3">
+         <!--  {{ 'EmailAccount.Title1' | translate }} -->
+         {{ Message }}
+        </p>
+        <ion-button style="color: white;" class="big-btn" (click)="next()" expand="block">
+          {{ 'EmailAccount.Continue' | translate }}
+          <div class="liquid">
+
+          </div>
+        </ion-button>
+      </div>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

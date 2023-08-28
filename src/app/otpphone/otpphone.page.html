@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="otpauth"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title-holder">
+    <h2>Set up 2-step verification</h2>
+    <p class="p3 ion-text-wrap">
+      Enter your phone number so we can text you an authentication code
+    </p>
+  </div>
+
+  <div class="the-form">
+
+    <div class="input-holder">
+      <ion-label >Phone Number</ion-label>
+      <div class="input-item">
+       
+        <ion-item lines="none">
+          <ion-input placeholder="+94 999 999 999"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+   
+
+
+
+  </div>
+
+  <div class="bottom-holder ion-text-center ion-padding">
+    <div class="btns-holder ">
+      <ion-button class="big-btn" (click)="goOTPVerify()" expand="block">
+       Continue
+      </ion-button>
+    </div>
+   
+  </div>
+</ion-content>

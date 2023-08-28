@@ -1,0 +1,46 @@
+ion-content
+{
+    .slider-holder
+    {
+        margin-top: 20vh;
+
+        .img-holder
+        {
+            img
+            {
+                height: 30vh;
+            }
+        }
+    }
+    .btn-holder
+    {
+        left: 0;
+        margin-top: 20px;
+        padding: 0 20px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+
+        #signIn
+        {
+            --background: transparent;
+            --border-color: var(--ion-color-primary);
+            --border-style: solid;
+            --border-width: 1px;
+            --color: #1B7A00;
+            margin-top: 20px !important;
+        }
+        ion-button
+        {
+            --border-radius: 24px;
+            --box-shadow: none;
+            height: 3rem;
+            font-size: 16px;
+            line-height: 26px;
+            position: relative;
+            overflow: hidden;
+
+         
+        }
+    }
+}
