@@ -37,9 +37,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
 			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">D84004F800</TACOnline>
-			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">DC4004F800</TACOnline>
+			<TACDefault category="D">DC4000A800</TACDefault>
+			<FloorLimit category="D">5000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -57,25 +57,7 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<TACDenial category="D">0010000000</TACDenial>
 			<TACOnline category="D">DC4004F800</TACOnline>
 			<TACDefault category="D">DC4000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">0</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>
-		
-		<AID>
-			<PartialAIDSelection category="D">1</PartialAIDSelection>
-			<ApplicationID category="D">A000000004</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D"></LocalAIDName>
-			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">D84004F800</TACOnline>
-			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<FloorLimit category="D">5000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -86,14 +68,32 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 
 		<AID>
 			<PartialAIDSelection category="D">0</PartialAIDSelection>
+			<ApplicationID category="D">A0000000980840</ApplicationID>
+			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+			<LocalAIDName category="D"></LocalAIDName>
+			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
+			<TACDenial category="D">0010000000</TACDenial>
+			<TACOnline category="D">D84004F800</TACOnline>
+			<TACDefault category="D">D84000A800</TACDefault>
+			<FloorLimit category="D">10000</FloorLimit>
+			<Threshold category="D">0</Threshold>
+			<TargetPercentage category="D">0</TargetPercentage>
+			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
+			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
+			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+		</AID>		
+		
+		<AID>
+			<PartialAIDSelection category="D">0</PartialAIDSelection>
 			<ApplicationID category="D">A0000000041010</ApplicationID>
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
-			<TACDenial category="D">0400000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACDenial category="D">0000000000</TACDenial>
+            <TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -109,9 +109,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
 			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -127,9 +127,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
 			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -137,17 +137,17 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
 			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
 		</AID>	
-		
+
 		<AID>
 			<PartialAIDSelection category="D">0</PartialAIDSelection>
 			<ApplicationID category="D">A0000000043060</ApplicationID>
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACDenial category="D">0000800000</TACDenial>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -163,9 +163,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
 			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -181,9 +181,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
 			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -199,9 +199,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">0002</TerminalAIDVersion>
 			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">FE50BCF800</TACOnline>
+			<TACDefault category="D">FE50BCA000</TACDefault>
+			<FloorLimit category="D">500</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -216,10 +216,10 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
+			<TACDenial category="D">0010000000</TACDenial>
 			<TACOnline category="D">D84004F800</TACOnline>
 			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<FloorLimit category="D">10000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -234,10 +234,10 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
+			<TACDenial category="D">0010000000</TACDenial>
 			<TACOnline category="D">D84004F800</TACOnline>
 			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<FloorLimit category="D">10000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -252,10 +252,10 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">0000000000</TACOnline>
-			<TACDefault category="D">0000000000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACDenial category="D">0010000000</TACDenial>
+			<TACOnline category="D">DE00FC9800</TACOnline>
+			<TACDefault category="D">DC50FC9800</TACDefault>
+			<FloorLimit category="D">15000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -264,41 +264,41 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
 		</AID>	
 
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A0000001523010</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D"></LocalAIDName>
-			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">0000000000</TACOnline>
-			<TACDefault category="D">0000000000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">0</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>			
-
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A0000000999090</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D"></LocalAIDName>
-			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">D84004F800</TACOnline>
-			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">0</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>			
+		<!-- Diners / DISCOVER -->
+        <AID>
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A0000001523010</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D"></LocalAIDName>
+            <TerminalAIDVersion category="D">0001</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">FCE09CF800</TACOnline>
+            <TACDefault category="D">DC00002000</TACDefault>
+            <FloorLimit category="D">5000</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">99</TargetPercentage>
+            <MaxTargetPercentage category="D">99</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D"></TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>
+        <AID>
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A0000000999090</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D"></LocalAIDName>
+            <TerminalAIDVersion category="D">008c</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">D84004F800</TACOnline>
+            <TACDefault category="D">D84000A800</TACDefault>
+            <FloorLimit category="D">5000</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">0</TargetPercentage>
+            <MaxTargetPercentage category="D">0</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>		
 
 		<AID>
 			<PartialAIDSelection category="D">0</PartialAIDSelection>
@@ -307,9 +307,9 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
 			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">FC60ACF800</TACOnline>
-			<TACDefault category="D">FC6024A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACOnline category="D">D84004F800</TACOnline>
+			<TACDefault category="D">D84000A800</TACDefault>
+			<FloorLimit category="D">10000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -327,7 +327,7 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<TACDenial category="D">0000000000</TACDenial>
 			<TACOnline category="D">FC50BCF800</TACOnline>
 			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<FloorLimit category="D">10000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -342,10 +342,10 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
 			<LocalAIDName category="D"></LocalAIDName>
 			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">0000000000</TACOnline>
-			<TACDefault category="D">0000000000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
+			<TACDenial category="D">0010000000</TACDenial>
+			<TACOnline category="D">FCE09CF800</TACOnline>
+			<TACDefault category="D">DC00002000</TACDefault>
+			<FloorLimit category="D">10000</FloorLimit>
 			<Threshold category="D">0</Threshold>
 			<TargetPercentage category="D">0</TargetPercentage>
 			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
@@ -354,113 +354,79 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
 		</AID>	
 
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A0000000042203</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D"></LocalAIDName>
-			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0000000000</TACDenial>
-			<TACOnline category="D">F850ACF800</TACOnline>
-			<TACDefault category="D">FC50ACA000</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">0</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>	
 
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A0000000980840</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D"></LocalAIDName>
-			<TerminalAIDVersion category="D">008c</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">D84004F800</TACOnline>
-			<TACDefault category="D">D84000A800</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">0</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>		
-		
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A000000333010101</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D">PBOC 1</LocalAIDName>
-			<TerminalAIDVersion category="D">0020</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">FC78FCF8F0</TACOnline>
-			<TACDefault category="D">FC78FCF8F0</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">40</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">039F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>
-		
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A000000333010102</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D">PBOC 2</LocalAIDName>
-			<TerminalAIDVersion category="D">0020</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">FC78FCF8F0</TACOnline>
-			<TACDefault category="D">FC78FCF8F0</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">40</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">039F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>
-		
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A000000333010103</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D">PBOC 3</LocalAIDName>
-			<TerminalAIDVersion category="D">0020</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">FC78FCF8F0</TACOnline>
-			<TACDefault category="D">FC78FCF8F0</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">40</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">039F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>
-		
-		<AID>
-			<PartialAIDSelection category="D">0</PartialAIDSelection>
-			<ApplicationID category="D">A000000333010106</ApplicationID>
-			<IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
-			<LocalAIDName category="D">PBOC 6</LocalAIDName>
-			<TerminalAIDVersion category="D">0030</TerminalAIDVersion>
-			<TACDenial category="D">0010000000</TACDenial>
-			<TACOnline category="D">FC78FCF8F0</TACOnline>
-			<TACDefault category="D">FC78FCF8F0</TACDefault>
-			<FloorLimit category="D">500000</FloorLimit>
-			<Threshold category="D">40</Threshold>
-			<TargetPercentage category="D">0</TargetPercentage>
-			<MaxTargetPercentage category="D">0</MaxTargetPercentage>
-			<TerminalDefaultTDOL category="D">039F3704</TerminalDefaultTDOL>
-			<TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
-			<TerminalRiskManagementData category="D"></TerminalRiskManagementData>
-		</AID>
+		<!-- Unionpay Debit -->
+        <AID>
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A000000333010101</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D">PBOC 1</LocalAIDName>
+            <TerminalAIDVersion category="D">0020</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">D84004F800</TACOnline>
+            <TACDefault category="D">D84000A800</TACDefault>
+            <FloorLimit category="D">0</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">99</TargetPercentage>
+            <MaxTargetPercentage category="D">99</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D"></TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>
+        <!-- Unionpay Credit -->
+        <AID>
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A000000333010102</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D">PBOC 1</LocalAIDName>
+            <TerminalAIDVersion category="D">0020</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">D84004F800</TACOnline>
+            <TACDefault category="D">D84000A800</TACDefault>
+            <FloorLimit category="D">0</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">99</TargetPercentage>
+            <MaxTargetPercentage category="D">99</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D"></TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>
+        <!-- Unionpay Quasi Credit -->
+        <AID>	
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A000000333010103</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D">PBOC 1</LocalAIDName>
+            <TerminalAIDVersion category="D">0020</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">D84004F800</TACOnline>
+            <TACDefault category="D">D84000A800</TACDefault>
+            <FloorLimit category="D">0</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">99</TargetPercentage>
+            <MaxTargetPercentage category="D">99</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D"></TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>
+        <!-- Unionpay Electronic Cash -->
+        <AID>
+            <PartialAIDSelection category="D">0</PartialAIDSelection>
+            <ApplicationID category="D">A000000333010106</ApplicationID>
+            <IfUseLocalAIDName category="D">0</IfUseLocalAIDName>
+            <LocalAIDName category="D">PBOC 1</LocalAIDName>
+            <TerminalAIDVersion category="D">0020</TerminalAIDVersion>
+            <TACDenial category="D">0010000000</TACDenial>
+            <TACOnline category="D">D84004F800</TACOnline>
+            <TACDefault category="D">D84000A800</TACDefault>
+            <FloorLimit category="D">0</FloorLimit>
+            <Threshold category="D">0</Threshold>
+            <TargetPercentage category="D">99</TargetPercentage>
+            <MaxTargetPercentage category="D">99</MaxTargetPercentage>
+            <TerminalDefaultTDOL category="D"></TerminalDefaultTDOL>
+            <TerminalDefaultDDOL category="D">039F3704</TerminalDefaultDDOL>
+            <TerminalRiskManagementData category="D"></TerminalRiskManagementData>
+        </AID>
 	</AIDLIST>
 
 	<CAPKLIST>
@@ -1015,7 +981,7 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<KeyID>C7</KeyID>
 			<HashArithmeticIndex>1</HashArithmeticIndex>
 			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>144</ModuleLength>
+			<ModuleLength>90</ModuleLength>
 			<Module>cd237e34e0299de48f1a2c94f478fe972896011e1ca6ab462b68fe0f6109c9a97c2dbeea65932cde0625138b9f162b92979daab019d3b5561d31eb2d4f09f12f927ea8f740ce0e87154965505e2272f69042b15d57ccc7f771919123978283b3cce524d9715207bf5f5ad369102176f0f7a78a6deb2bff0edce165f3b14f14d0035b2756861fe03c43396ed002c894a3</Module>
 			<ExponentLength>1</ExponentLength>
 			<Exponent>03</Exponent>
@@ -1126,123 +1092,103 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<ExpireDate>201231</ExpireDate>
 			<CheckSum>D9FD62C9DD4E6DE7741E9A17FB1FF2C5DB948BCB</CheckSum>
 		</CAPK>
-		
+				
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>01</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>128</ModuleLength>
+            <Module>BBE9066D2517511D239C7BFA77884144AE20C7372F515147E8CE6537C54C0A6A4D45F8CA4D290870CDA59F1344EF71D17D3F35D92F3F06778D0D511EC2A7DC4FFEADF4FB1253CE37A7B2B5A3741227BEF72524DA7A2B7B1CB426BEE27BC513B0CB11AB99BC1BC61DF5AC6CC4D831D0848788CD74F6D543AD37C5A2B4C5D5A93B</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>091231</ExpireDate>
+            <CheckSum>E881E390675D44C2DD81234DCE29C3F5AB2297A0</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>02</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>144</ModuleLength>
+            <Module>A3767ABD1B6AA69D7F3FBF28C092DE9ED1E658BA5F0909AF7A1CCD907373B7210FDEB16287BA8E78E1529F443976FD27F991EC67D95E5F4E96B127CAB2396A94D6E45CDA44CA4C4867570D6B07542F8D4BF9FF97975DB9891515E66F525D2B3CBEB6D662BFB6C3F338E93B02142BFC44173A3764C56AADD202075B26DC2F9F7D7AE74BD7D00FD05EE430032663D27A57</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>211231</ExpireDate>
+            <CheckSum>03BB335A8549A03B87AB089D006F60852E4B8060</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>03</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>176</ModuleLength>
+            <Module>B0627DEE87864F9C18C13B9A1F025448BF13C58380C91F4CEBA9F9BCB214FF8414E9B59D6ABA10F941C7331768F47B2127907D857FA39AAF8CE02045DD01619D689EE731C551159BE7EB2D51A372FF56B556E5CB2FDE36E23073A44CA215D6C26CA68847B388E39520E0026E62294B557D6470440CA0AEFC9438C923AEC9B2098D6D3A1AF5E8B1DE36F4B53040109D89B77CAFAF70C26C601ABDF59EEC0FDC8A99089140CD2E817E335175B03B7AA33D</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>221231</ExpireDate>
+            <CheckSum>87F0CD7C0E86F38F89A66F8C47071A8B88586F26</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>04</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>248</ModuleLength>
+            <Module>BC853E6B5365E89E7EE9317C94B02D0ABB0DBD91C05A224A2554AA29ED9FCB9D86EB9CCBB322A57811F86188AAC7351C72BD9EF196C5A01ACEF7A4EB0D2AD63D9E6AC2E7836547CB1595C68BCBAFD0F6728760F3A7CA7B97301B7E0220184EFC4F653008D93CE098C0D93B45201096D1ADFF4CF1F9FC02AF759DA27CD6DFD6D789B099F16F378B6100334E63F3D35F3251A5EC78693731F5233519CDB380F5AB8C0F02728E91D469ABD0EAE0D93B1CC66CE127B29C7D77441A49D09FCA5D6D9762FC74C31BB506C8BAE3C79AD6C2578775B95956B5370D1D0519E37906B384736233251E8F09AD79DFBE2C6ABFADAC8E4D8624318C27DAF1</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>221231</ExpireDate>
+            <CheckSum>F527081CF371DD7E1FD4FA414A665036E0F5E6E5</CheckSum>
+        </CAPK>
 		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>1</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>128</ModuleLength>
-			<Module>BBE9066D2517511D239C7BFA77884144AE20C7372F515147E8CE6537C54C0A6A4D45F8CA4D290870CDA59F1344EF71D17D3F35D92F3F06778D0D511EC2A7DC4FFEADF4FB1253CE37A7B2B5A3741227BEF72524DA7A2B7B1CB426BEE27BC513B0CB11AB99BC1BC61DF5AC6CC4D831D0848788CD74F6D543AD37C5A2B4C5D5A93B</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>091231</ExpireDate>
-			<CheckSum>E881E390675D44C2DD81234DCE29C3F5AB2297A0</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>2</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>144</ModuleLength>
-			<Module>A3767ABD1B6AA69D7F3FBF28C092DE9ED1E658BA5F0909AF7A1CCD907373B7210FDEB16287BA8E78E1529F443976FD27F991EC67D95E5F4E96B127CAB2396A94D6E45CDA44CA4C4867570D6B07542F8D4BF9FF97975DB9891515E66F525D2B3CBEB6D662BFB6C3F338E93B02142BFC44173A3764C56AADD202075B26DC2F9F7D7AE74BD7D00FD05EE430032663D27A57</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>211231</ExpireDate>
-			<CheckSum>03BB335A8549A03B87AB089D006F60852E4B8060</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>3</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>176</ModuleLength>
-			<Module>B0627DEE87864F9C18C13B9A1F025448BF13C58380C91F4CEBA9F9BCB214FF8414E9B59D6ABA10F941C7331768F47B2127907D857FA39AAF8CE02045DD01619D689EE731C551159BE7EB2D51A372FF56B556E5CB2FDE36E23073A44CA215D6C26CA68847B388E39520E0026E62294B557D6470440CA0AEFC9438C923AEC9B2098D6D3A1AF5E8B1DE36F4B53040109D89B77CAFAF70C26C601ABDF59EEC0FDC8A99089140CD2E817E335175B03B7AA33D</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>221231</ExpireDate>
-			<CheckSum>87F0CD7C0E86F38F89A66F8C47071A8B88586F26</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>4</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>248</ModuleLength>
-			<Module>BC853E6B5365E89E7EE9317C94B02D0ABB0DBD91C05A224A2554AA29ED9FCB9D86EB9CCBB322A57811F86188AAC7351C72BD9EF196C5A01ACEF7A4EB0D2AD63D9E6AC2E7836547CB1595C68BCBAFD0F6728760F3A7CA7B97301B7E0220184EFC4F653008D93CE098C0D93B45201096D1ADFF4CF1F9FC02AF759DA27CD6DFD6D789B099F16F378B6100334E63F3D35F3251A5EC78693731F5233519CDB380F5AB8C0F02728E91D469ABD0EAE0D93B1CC66CE127B29C7D77441A49D09FCA5D6D9762FC74C31BB506C8BAE3C79AD6C2578775B95956B5370D1D0519E37906B384736233251E8F09AD79DFBE2C6ABFADAC8E4D8624318C27DAF1</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>221231</ExpireDate>
-			<CheckSum>F527081CF371DD7E1FD4FA414A665036E0F5E6E5</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>08</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>144</ModuleLength>
-			<Module>B61645EDFD5498FB246444037A0FA18C0F101EBD8EFA54573CE6E6A7FBF63ED21D66340852B0211CF5EEF6A1CD989F66AF21A8EB19DBD8DBC3706D135363A0D683D046304F5A836BC1BC632821AFE7A2F75DA3C50AC74C545A754562204137169663CFCC0B06E67E2109EBA41BC67FF20CC8AC80D7B6EE1A95465B3B2657533EA56D92D539E5064360EA4850FED2D1BF</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>301231</ExpireDate>
-			<CheckSum>EE23B616C95C02652AD18860E48787C079E8E85A</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>9</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>176</ModuleLength>
-			<Module>EB374DFC5A96B71D2863875EDA2EAFB96B1B439D3ECE0B1826A2672EEEFA7990286776F8BD989A15141A75C384DFC14FEF9243AAB32707659BE9E4797A247C2F0B6D99372F384AF62FE23BC54BCDC57A9ACD1D5585C303F201EF4E8B806AFB809DB1A3DB1CD112AC884F164A67B99C7D6E5A8A6DF1D3CAE6D7ED3D5BE725B2DE4ADE23FA679BF4EB15A93D8A6E29C7FFA1A70DE2E54F593D908A3BF9EBBD760BBFDC8DB8B54497E6C5BE0E4A4DAC29E5</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>301231</ExpireDate>
-			<CheckSum>A075306EAB0045BAF72CDD33B3B678779DE1F527</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>0A</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>128</ModuleLength>
-			<Module>B2AB1B6E9AC55A75ADFD5BBC34490E53C4C3381F34E60E7FAC21CC2B26DD34462B64A6FAE2495ED1DD383B8138BEA100FF9B7A111817E7B9869A9742B19E5C9DAC56F8B8827F11B05A08ECCF9E8D5E85B0F7CFA644EFF3E9B796688F38E006DEB21E101C01028903A06023AC5AAB8635F8E307A53AC742BDCE6A283F585F48EF</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>301231</ExpireDate>
-			<CheckSum>C88BE6B2417C4F941C9371EA35A377158767E4E3</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000333</RID>
-			<KeyID>0B</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>248</ModuleLength>
-			<Module>CF9FDF46B356378E9AF311B0F981B21A1F22F250FB11F55C958709E3C7241918293483289EAE688A094C02C344E2999F315A72841F489E24B1BA0056CFAB3B479D0E826452375DCDBB67E97EC2AA66F4601D774FEAEF775ACCC621BFEB65FB0053FC5F392AA5E1D4C41A4DE9FFDFDF1327C4BB874F1F63A599EE3902FE95E729FD78D4234DC7E6CF1ABABAA3F6DB29B7F05D1D901D2E76A606A8CBFFFFECBD918FA2D278BDB43B0434F5D45134BE1C2781D157D501FF43E5F1C470967CD57CE53B64D82974C8275937C5D8502A1252A8A5D6088A259B694F98648D9AF2CB0EFD9D943C69F896D49FA39702162ACB5AF29B90BADE005BC157</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>301231</ExpireDate>
-			<CheckSum>BD331F9996A490B33C13441066A09AD3FEB5F66C</CheckSum>
-		</CAPK>
-		
-		<CAPK>
-			<RID>A000000065</RID>
-			<KeyID>0F</KeyID>
-			<HashArithmeticIndex>1</HashArithmeticIndex>
-			<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			<ModuleLength>144</ModuleLength>
-			<Module>9EFBADDE4071D4EF98C969EB32AF854864602E515D6501FDE576B310964A4F7C2CE842ABEFAFC5DC9E26A619BCF2614FE07375B9249BEFA09CFEE70232E75FFD647571280C76FFCA87511AD255B98A6B577591AF01D003BD6BF7E1FCE4DFD20D0D0297ED5ECA25DE261F37EFE9E175FB5F12D2503D8CFB060A63138511FE0E125CF3A643AFD7D66DCF9682BD246DDEA1</Module>
-			<ExponentLength>1</ExponentLength>
-			<Exponent>03</Exponent>
-			<ExpireDate>101231</ExpireDate>
-			<CheckSum>2A1B82DE00F5F0C401760ADF528228D3EDE0F403</CheckSum>
-		</CAPK>
+            <RID>A000000333</RID>
+            <KeyID>08</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>144</ModuleLength>
+            <Module>B61645EDFD5498FB246444037A0FA18C0F101EBD8EFA54573CE6E6A7FBF63ED21D66340852B0211CF5EEF6A1CD989F66AF21A8EB19DBD8DBC3706D135363A0D683D046304F5A836BC1BC632821AFE7A2F75DA3C50AC74C545A754562204137169663CFCC0B06E67E2109EBA41BC67FF20CC8AC80D7B6EE1A95465B3B2657533EA56D92D539E5064360EA4850FED2D1BF</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>301231</ExpireDate>
+            <CheckSum>EE23B616C95C02652AD18860E48787C079E8E85A</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>09</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>176</ModuleLength>
+            <Module>EB374DFC5A96B71D2863875EDA2EAFB96B1B439D3ECE0B1826A2672EEEFA7990286776F8BD989A15141A75C384DFC14FEF9243AAB32707659BE9E4797A247C2F0B6D99372F384AF62FE23BC54BCDC57A9ACD1D5585C303F201EF4E8B806AFB809DB1A3DB1CD112AC884F164A67B99C7D6E5A8A6DF1D3CAE6D7ED3D5BE725B2DE4ADE23FA679BF4EB15A93D8A6E29C7FFA1A70DE2E54F593D908A3BF9EBBD760BBFDC8DB8B54497E6C5BE0E4A4DAC29E5</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>301231</ExpireDate>
+            <CheckSum>A075306EAB0045BAF72CDD33B3B678779DE1F527</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>10</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>128</ModuleLength>
+            <Module>B2AB1B6E9AC55A75ADFD5BBC34490E53C4C3381F34E60E7FAC21CC2B26DD34462B64A6FAE2495ED1DD383B8138BEA100FF9B7A111817E7B9869A9742B19E5C9DAC56F8B8827F11B05A08ECCF9E8D5E85B0F7CFA644EFF3E9B796688F38E006DEB21E101C01028903A06023AC5AAB8635F8E307A53AC742BDCE6A283F585F48EF</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>301231</ExpireDate>
+            <CheckSum>C88BE6B2417C4F941C9371EA35A377158767E4E3</CheckSum>
+        </CAPK>
+        <CAPK>
+            <RID>A000000333</RID>
+            <KeyID>11</KeyID>
+            <HashArithmeticIndex>1</HashArithmeticIndex>
+            <RSAArithmeticIndex>1</RSAArithmeticIndex>
+            <ModuleLength>248</ModuleLength>
+            <Module>CF9FDF46B356378E9AF311B0F981B21A1F22F250FB11F55C958709E3C7241918293483289EAE688A094C02C344E2999F315A72841F489E24B1BA0056CFAB3B479D0E826452375DCDBB67E97EC2AA66F4601D774FEAEF775ACCC621BFEB65FB0053FC5F392AA5E1D4C41A4DE9FFDFDF1327C4BB874F1F63A599EE3902FE95E729FD78D4234DC7E6CF1ABABAA3F6DB29B7F05D1D901D2E76A606A8CBFFFFECBD918FA2D278BDB43B0434F5D45134BE1C2781D157D501FF43E5F1C470967CD57CE53B64D82974C8275937C5D8502A1252A8A5D6088A259B694F98648D9AF2CB0EFD9D943C69F896D49FA39702162ACB5AF29B90BADE005BC157</Module>
+            <ExponentLength>1</ExponentLength>
+            <Exponent>03</Exponent>
+            <ExpireDate>301231</ExpireDate>
+            <CheckSum>BD331F9996A490B33C13441066A09AD3FEB5F66C</CheckSum>
+        </CAPK>
 	</CAPKLIST>
 
 
@@ -1251,8 +1197,7 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<RID>A000000004</RID>
 			<KeyID>F0</KeyID>
 			<CertificateSN>000711</CertificateSN>
-		</REVOKEDCERTIFICATE>
-		
+		</REVOKEDCERTIFICATE>		
 		<REVOKEDCERTIFICATE>
 			<RID>A000000004</RID>
 			<KeyID>F1</KeyID>
@@ -1262,42 +1207,55 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<RID>A000000025</RID>
 			<KeyID>C8</KeyID>
 			<CertificateSN>000711</CertificateSN>
+		</REVOKEDCERTIFICATE>	
+		<REVOKEDCERTIFICATE>
+			<RID>A000000152</RID>
+			<KeyID>5C</KeyID>
+			<CertificateSN>000711</CertificateSN>
+		</REVOKEDCERTIFICATE>
+		<REVOKEDCERTIFICATE>
+			<RID>A000000065</RID>
+			<KeyID>11</KeyID>
+			<CertificateSN>000711</CertificateSN>
+		</REVOKEDCERTIFICATE>
+		<REVOKEDCERTIFICATE>
+			<RID>A000000333</RID>
+			<KeyID>11</KeyID>
+			<CertificateSN>000711</CertificateSN>
 		</REVOKEDCERTIFICATE>		
 	</REVOCATIONLIST>
 
-	<ICSCONFIGURATION>
+	<ICSCONFIGURATION>	
 		<ICS>
-			<Type>Attended_All_CVM_Supported</Type>
+			<Type>Attended_SignatureNoCVM</Type>
 			<TerminalType category="A">22</TerminalType>
 			<CardDataInputCapability category="D">E0</CardDataInputCapability>
-			<CVMCapability category="A">F8</CVMCapability>
+			<CVMCapability category="A">28</CVMCapability>
 			<SecurityCapability category="A">C8</SecurityCapability>
-			<AdditionalTerminalCapabilities>FF80F0A001</AdditionalTerminalCapabilities>
-			<GetDataForPINTryCounter>1</GetDataForPINTryCounter>
-			<BypassPINEntry>1</BypassPINEntry>
+			<AdditionalTerminalCapabilities>F080F0A001</AdditionalTerminalCapabilities>
+			<GetDataForPINTryCounter>0</GetDataForPINTryCounter>
+			<BypassPINEntry>0</BypassPINEntry>
 			<SubsequentBypassPINEntry>0</SubsequentBypassPINEntry>
 			<ExceptionFileSupported>1</ExceptionFileSupported>
 			<ForcedOnlineCapability>0</ForcedOnlineCapability>
 			<IssuerReferralsSupported>1</IssuerReferralsSupported>
-			<ConfigurationCheckSum>5CD6D02F</ConfigurationCheckSum>
+			<ConfigurationCheckSum>2D58DFD2</ConfigurationCheckSum>
 		</ICS>
-		
 		<ICS>
-			<Type>Attended_NoNoCVM</Type>
+			<Type>Attended_SignatureNoCVM_ForceOnline</Type>
 			<TerminalType category="A">22</TerminalType>
 			<CardDataInputCapability category="D">E0</CardDataInputCapability>
-			<CVMCapability category="A">F0</CVMCapability>
+			<CVMCapability category="A">28</CVMCapability>
 			<SecurityCapability category="A">C8</SecurityCapability>
-			<AdditionalTerminalCapabilities>FF80F0A001</AdditionalTerminalCapabilities>
-			<GetDataForPINTryCounter>1</GetDataForPINTryCounter>
-			<BypassPINEntry>1</BypassPINEntry>
-			<SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
+			<AdditionalTerminalCapabilities>F080F0A001</AdditionalTerminalCapabilities>
+			<GetDataForPINTryCounter>0</GetDataForPINTryCounter>
+			<BypassPINEntry>0</BypassPINEntry>
+			<SubsequentBypassPINEntry>0</SubsequentBypassPINEntry>
 			<ExceptionFileSupported>1</ExceptionFileSupported>
 			<ForcedOnlineCapability>1</ForcedOnlineCapability>
 			<IssuerReferralsSupported>1</IssuerReferralsSupported>
-			<ConfigurationCheckSum>90118929</ConfigurationCheckSum>
+			<ConfigurationCheckSum>2D58DFD2</ConfigurationCheckSum>
 		</ICS>
-		
 		<ICS>
 			<Type>Attended_OnlySignature</Type>
 			<TerminalType category="A">22</TerminalType>
@@ -1313,57 +1271,87 @@ Note: actually for category B, it will not be used here. Becasue the parameters 
 			<IssuerReferralsSupported>1</IssuerReferralsSupported>
 			<ConfigurationCheckSum>2D58DFD2</ConfigurationCheckSum>
 		</ICS>
-		
 		<ICS>
-			<Type>Attended_NoOnlinePIN_NoNoCVM</Type>
+			<Type>Attended_OnlyNoCVM</Type>
 			<TerminalType category="A">22</TerminalType>
 			<CardDataInputCapability category="D">E0</CardDataInputCapability>
-			<CVMCapability category="A">B0</CVMCapability>
+			<CVMCapability category="A">08</CVMCapability>
 			<SecurityCapability category="A">C8</SecurityCapability>
-			<AdditionalTerminalCapabilities>F080F0A001</AdditionalTerminalCapabilities>
+			<AdditionalTerminalCapabilities>FF80F0A001</AdditionalTerminalCapabilities>
 			<GetDataForPINTryCounter>1</GetDataForPINTryCounter>
 			<BypassPINEntry>1</BypassPINEntry>
-			<SubsequentBypassPINEntry>0</SubsequentBypassPINEntry>
+			<SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
 			<ExceptionFileSupported>1</ExceptionFileSupported>
 			<ForcedOnlineCapability>1</ForcedOnlineCapability>
 			<IssuerReferralsSupported>1</IssuerReferralsSupported>
-			<ConfigurationCheckSum>F3C9DE88</ConfigurationCheckSum>
-		</ICS>		
+			<ConfigurationCheckSum>90118929</ConfigurationCheckSum>
+		</ICS>
+		
 	</ICSCONFIGURATION>
 	
 	<CARDSCHEMECONFIGRATION>
 		<CARDSCHEME>
 			<RID>A000000003</RID>
 			<AID></AID>
-			<ICSTYPE>Attended_All_CVM_Supported</ICSTYPE>
+			<ICSTYPE>Attended_SignatureNoCVM</ICSTYPE>
 		</CARDSCHEME>
 
 		<CARDSCHEME>
 			<RID></RID>
             <AID>A0000000031010</AID>
-            <ICSTYPE>Attended_All_CVM_Supported</ICSTYPE>
+            <ICSTYPE>Attended_OnlySignature</ICSTYPE>
         </CARDSCHEME>
 
 		<CARDSCHEME>
 			<RID>A000000004</RID>
 			<AID></AID>
-			<ICSTYPE>Attended_All_CVM_Supported</ICSTYPE>
+			<ICSTYPE>Attended_SignatureNoCVM</ICSTYPE>
 		</CARDSCHEME>
+		
+		<CARDSCHEME>
+			<RID></RID>
+            <AID>A0000000041010</AID>
+            <ICSTYPE>Attended_OnlyNoCVM</ICSTYPE>
+        </CARDSCHEME>
+
+		<CARDSCHEME>
+			<RID>A000000025</RID>
+			<AID></AID>
+			<ICSTYPE>Attended_OnlySignature</ICSTYPE>
+		</CARDSCHEME>
+		
+		<CARDSCHEME>
+			<RID>A000000152</RID>
+			<AID></AID>
+			<ICSTYPE>Attended_SignatureNoCVM</ICSTYPE>
+		</CARDSCHEME>
+		
+		<CARDSCHEME>
+			<RID>A000000065</RID>
+			<AID></AID>
+			<ICSTYPE>Attended_SignatureNoCVM</ICSTYPE>
+		</CARDSCHEME>
+		
+		<CARDSCHEME>
+			<RID>A000000333</RID>
+			<AID></AID>
+			<ICSTYPE>Attended_SignatureNoCVM</ICSTYPE>
+		</CARDSCHEME>		
 	</CARDSCHEMECONFIGRATION>	
 	
 	<TERMINALCONFIGURATION>
 		<MerchantID>PAXTestMerchant</MerchantID>
-		<TerminalID>987654321</TerminalID>
-		<TerminalCountryCode category="C">0840</TerminalCountryCode>
-		<TerminalCurrencyCode category="C">0840</TerminalCurrencyCode>
+		<TerminalID>12345678</TerminalID>
+		<TerminalCountryCode category="C">0056</TerminalCountryCode>
+		<TerminalCurrencyCode category="C">0056</TerminalCurrencyCode>
 		<TerminalCurrencyExponent category="C">2</TerminalCurrencyExponent>
 		<TerminalCurrencySymbol category="C">$</TerminalCurrencySymbol>
-		<ReferenceCurrencyCode category="C">0840</ReferenceCurrencyCode>
+		<ReferenceCurrencyCode category="C">0056</ReferenceCurrencyCode>
 		<ReferenceCurrencyExponent category="C">2</ReferenceCurrencyExponent>
 		<ConversionRatio category="C">1</ConversionRatio>
-		<MerchantName>PAX-APP</MerchantName>
-		<MerchantLocation>ShenZhen</MerchantLocation>
-		<MerchantCategoryCode>0751</MerchantCategoryCode>
+		<MerchantName>Walmart</MerchantName>
+		<MerchantLocation>NewYork</MerchantLocation>
+		<MerchantCategoryCode>7523</MerchantCategoryCode>
 	</TERMINALCONFIGURATION>	
 	
 </EMVPARAM>
