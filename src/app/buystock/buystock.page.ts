@@ -43,6 +43,8 @@ export class BuystockPage implements OnInit
 
   @ViewChild('header') headerImage: ElementRef;
 
+  @ViewChild('baseAmountInput') baseAmountInput;
+
   constructor(
     private     navCtrl                   : NavController         ,
     private     route                     : ActivatedRoute        ,
@@ -266,6 +268,14 @@ export class BuystockPage implements OnInit
     }
 }
 
+
+ionViewDidEnter() 
+{
+  if (this.baseAmountInput) 
+  {
+    this.baseAmountInput.setFocus()
+  }
+}
 
 setUpLanguage                 (                   ) 
 {

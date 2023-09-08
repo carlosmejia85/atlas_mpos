@@ -308,7 +308,7 @@ export class ViewtransactionPage implements OnInit {
         continue;
       }
 
-      this.transactions.unshift ( temp[i] )
+      this.transactions.push ( temp[i] )
     }
      
      console.log ( this.transactions );

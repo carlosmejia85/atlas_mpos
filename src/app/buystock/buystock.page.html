@@ -33,7 +33,7 @@
 
   <div class="input-holder animate__animated animate__zoomIn flex al-center">
     <h1>$</h1>
-    <ion-input type="text" inputmode="tel" class="ion-text-center" placeholder="0.00" [(ngModel)]="baseAmount" (ionInput)='onBaseAmountChange($event)'></ion-input>
+    <ion-input type="text" inputmode="tel" class="ion-text-center" placeholder="0.00" [(ngModel)]="baseAmount" (ionInput)='onBaseAmountChange($event)' #baseAmountInput></ion-input>
   </div>
 
   <div class="border ion-text-center">
